@@ -5,20 +5,23 @@
         static void Main(string[] args)
         {
             Console.Write("Enter the first 9 digits: ");
-            var input = Console.ReadLine();
+            var userIsbnInput = Console.ReadLine();
 
-            var digitsIntArray = ExtractDigitsAsInt(input);
-            var checkDigit = CalculateCheckDigit(digitsIntArray);
-            Console.WriteLine("Final ISBN: " + CombineIsbn(input, checkDigit));
+            var digitsAsIntArray = ExtractDigitsAsIntArray(userIsbnInput);
+            var checkDigit = CalculateCheckDigit(digitsAsIntArray);
+
+            Console.WriteLine("Complete ISBN: " + CombineIsbn(userIsbnInput, checkDigit));
         }
 
-        private static int[] ExtractDigitsAsInt(string input)
+        private static int[] ExtractDigitsAsIntArray(string input)
         {
             var digits = new int[input.Length];
-            for (int i = 0; i < digits.Length; i++)
+
+            for (int i = 0; i < input.Length; i++)
             {
                 digits[i] = int.Parse(input[i].ToString());
             }
+
             return digits;
         }
 
@@ -31,18 +34,12 @@
                 sum += digts[i] * (10 - i);
             }
 
-            return (11 - (sum % 11)) % 11;  //check digit calculation
+            return (11 - (sum % 11)) % 11;
         }
 
         private static string CombineIsbn(string input, int checkDigitIntValue)
         {
-            //if (checkDigitIntValue == 10)
-            //{
-            //    return input + "X";
-            //}
-
-            //return input + checkDigitIntValue.ToString();
-            return input + (checkDigitIntValue == 10 ? "X" : checkDigitIntValue.ToString()); // not sure if im allowed to use this expression for the current task
+            return input + (checkDigitIntValue == 10 ? "X" : checkDigitIntValue.ToString());
         }
     }
 }
