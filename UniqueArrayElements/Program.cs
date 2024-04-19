@@ -6,17 +6,20 @@
         {
             Console.Write("Enter number of array element: ");
             var arrayLenght = int.Parse(Console.ReadLine());
-            var originalArray = ReadArrayFromConsole(arrayLenght);
+
+            var originalArray = ReadIntArrayFromConsole(arrayLenght);
             var filteredArray = FilterUniqueElements(originalArray);
+
             Console.Write("Original array : ");
             PrintArray(originalArray);
             Console.Write("Filtered array : ");
             PrintArray(filteredArray);
         }
 
-        private static int[] ReadArrayFromConsole (int arrayLenght)
+        private static int[] ReadIntArrayFromConsole (int arrayLenght)
         {
             var array = new int[arrayLenght];
+
             for (int i = 0; i < arrayLenght; i++)
             {
                 Console.Write($"Enter [{i}] element: ");
@@ -25,6 +28,7 @@
 
             return array;
         }
+
         private static int[] FilterUniqueElements(int[] array)
         {
             var tempArray = new int[array.Length];
@@ -33,6 +37,7 @@
             for (int i = 0; i < array.Length; i++)
             {
                 var existing = false;
+
                 for (int j = 0; j < tempArray.Length; j++)
                 {
                     if (array[i] == tempArray[j])
@@ -61,6 +66,7 @@
             {
                 Console.Write(element + " ");
             }
+
             Console.WriteLine();
         }
     }
