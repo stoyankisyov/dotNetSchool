@@ -5,6 +5,10 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetSchool", "dotNetSchool\dotNetSchool.csproj", "{9E43D88E-43D7-4830-A2FA-A7E1F1F0721E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task1.2", "Task1.2", "{6A84DD99-8A2B-456A-B082-41C707618FB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsbnCheckDigitCalculator", "IsbnCheckDigitCalculator\IsbnCheckDigitCalculator.csproj", "{5120A43A-6E12-45F2-B2BA-D252AC5F6AA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{9E43D88E-43D7-4830-A2FA-A7E1F1F0721E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E43D88E-43D7-4830-A2FA-A7E1F1F0721E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E43D88E-43D7-4830-A2FA-A7E1F1F0721E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5120A43A-6E12-45F2-B2BA-D252AC5F6AA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5120A43A-6E12-45F2-B2BA-D252AC5F6AA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5120A43A-6E12-45F2-B2BA-D252AC5F6AA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5120A43A-6E12-45F2-B2BA-D252AC5F6AA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5120A43A-6E12-45F2-B2BA-D252AC5F6AA4} = {6A84DD99-8A2B-456A-B082-41C707618FB1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43F33EC0-3751-4917-B4E7-66E9EAF50AC3}
