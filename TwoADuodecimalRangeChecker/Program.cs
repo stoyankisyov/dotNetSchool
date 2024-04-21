@@ -29,32 +29,20 @@
             {
                 var remainder = decimalNumber % 12;
 
-                switch (remainder)
+                if (remainder <= 9)
                 {
-                    case 0:
-                        result = "0" + result; break;
-                    case 1:
-                        result = "1" + result; break;
-                    case 2:
-                        result = "2" + result; break;
-                    case 3:
-                        result = "3" + result; break;
-                    case 4:
-                        result = "4" + result; break;
-                    case 5:
-                        result = "5" + result; break;
-                    case 6:
-                        result = "6" + result; break;
-                    case 7:
-                        result = "7" + result; break;
-                    case 8:
-                        result = "8" + result; break;
-                    case 9:
-                        result = "9" + result; break;
-                    case 10:
-                        result = "A" + result; break;
-                    case 11:
-                        result = "B" + result; break;
+                    result = remainder.ToString() + result;
+                }
+
+                else
+                {
+                    switch (remainder)
+                    {
+                        case 10:
+                            result = "A" + result; break;
+                        case 11:
+                            result = "B" + result; break;
+                    }
                 }
 
                 decimalNumber /= 12;
