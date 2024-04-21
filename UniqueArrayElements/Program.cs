@@ -9,11 +9,14 @@
 
             var originalArray = ReadIntArrayFromConsole(arrayLenght);
             var filteredArray = FilterUniqueElements(originalArray);
+            var hashSetFilteredArray = FilterUniqueElementsWithHashSet(originalArray);
 
             Console.Write("Original array : ");
             PrintArray(originalArray);
             Console.Write("Filtered array : ");
             PrintArray(filteredArray);
+            Console.Write("HashSet Filtered array: ");
+            PrintArray(hashSetFilteredArray);
         }
 
         private static int[] ReadIntArrayFromConsole (int arrayLenght)
@@ -58,6 +61,18 @@
             Array.Copy(tempArray, finalArray, lastElementIndex);
 
             return finalArray;
+        }
+
+        private static int[] FilterUniqueElementsWithHashSet(int[] array)
+        {
+            var uniqueElements = new HashSet<int>();
+
+            foreach (var element in array)
+            {
+                uniqueElements.Add(element);
+            }
+
+            return uniqueElements.ToArray();
         }
 
         private static void PrintArray(int[] array)
