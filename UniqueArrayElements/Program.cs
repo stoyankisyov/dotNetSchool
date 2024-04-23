@@ -41,7 +41,7 @@
             {
                 var existing = false;
 
-                for (int j = 0; j < tempArray.Length; j++)
+                for (int j = 0; j < lastElementIndex; j++)
                 {
                     if (array[i] == tempArray[j])
                     {
