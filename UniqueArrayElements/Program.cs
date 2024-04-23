@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter number of array element: ");
+            Console.Write("Enter array lenght: ");
             var arrayLenght = int.Parse(Console.ReadLine());
 
             var originalArray = ReadIntArrayFromConsole(arrayLenght);
