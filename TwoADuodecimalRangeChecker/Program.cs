@@ -4,26 +4,35 @@
     {
         static void Main(string[] args)
         {
-            Console.Write($"Enter value for a: ");
-            var a = int.Parse(Console.ReadLine());
+            var a = EnterValue("a");
+            var b = EnterValue("b");
 
-            Console.Write($"Enter value for b: ");
-            var b = int.Parse(Console.ReadLine());
-
-            for (int i = a; i <= b; i++)
+            if (a < b)
             {
-                var duodecimalNumber = ConvertDecimalToDuodecimal(i);
-
-                if (HasTwoAs(duodecimalNumber))
-                {
-                    Console.WriteLine($"{i} - {duodecimalNumber}");
-                }
+                PrintNumbers(a, b);
             }
+            else
+            {
+                PrintNumbers(b, a);
+            }
+        }
+
+        private static int EnterValue(string variableName)
+        {
+            Console.Write($"Enter value for {variableName}: ");
+            return int.Parse(Console.ReadLine());
         }
 
         private static string ConvertDecimalToDuodecimal(int decimalNumber)
         {
+            if (decimalNumber == 0)
+            {
+                return "0";
+            }
+
             var result = "";
+            var isNegative = decimalNumber < 0;
+            decimalNumber = Math.Abs(decimalNumber);
 
             while (decimalNumber > 0)
             {
@@ -48,6 +57,11 @@
                 decimalNumber /= 12;
             }
 
+            if (isNegative)
+            {
+                return "-" + result;
+            }
+
             return result;
         }
 
@@ -64,6 +78,19 @@
             }
 
             return count == 2;
+        }
+
+        private static void PrintNumbers(int start, int end)
+        {
+            for (int i = start; i <= end; i++)
+            {
+                var duodecimalNumber = ConvertDecimalToDuodecimal(i);
+
+                if (HasTwoAs(duodecimalNumber))
+                {
+                    Console.WriteLine($"{i} - {duodecimalNumber}");
+                }
+            }
         }
     }
 }
