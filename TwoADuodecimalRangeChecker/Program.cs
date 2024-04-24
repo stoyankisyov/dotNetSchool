@@ -53,7 +53,6 @@
                             result = "B" + result; break;
                     }
                 }
-
                 decimalNumber /= 12;
             }
 

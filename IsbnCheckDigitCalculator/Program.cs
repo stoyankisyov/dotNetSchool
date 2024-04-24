@@ -10,7 +10,7 @@
             var digitsAsIntArray = ExtractDigitsAsIntArray(userIsbnInput);
             var checkDigit = CalculateCheckDigit(digitsAsIntArray);
 
-            Console.WriteLine("Complete ISBN: " + CombineIsbn(userIsbnInput, checkDigit));
+            Console.WriteLine("Complete ISBN: " + CombineIsbn(userIsbnInput, checkDigit)); 
         }
 
         private static int[] ExtractDigitsAsIntArray(string input)
