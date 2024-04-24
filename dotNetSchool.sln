@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetSchool", "dotNetSchool\dotNetSchool.csproj", "{9E43D88E-43D7-4830-A2FA-A7E1F1F0721E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task1.3", "Task1.3", "{C77951EA-E9A2-4F32-A2DB-A94C5EC83E22}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task3", "Task3", "{C77951EA-E9A2-4F32-A2DB-A94C5EC83E22}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniqueArrayElements", "UniqueArrayElements\UniqueArrayElements.csproj", "{64D43E84-ADCA-4E29-9D90-D2D3CA10B5CA}"
 EndProject
