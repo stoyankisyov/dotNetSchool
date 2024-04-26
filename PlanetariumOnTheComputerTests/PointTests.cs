@@ -40,5 +40,12 @@ namespace PlanetariumOnTheComputerTests
             var secondTestPoint = new Point(1, 2, 2, 10);
             Assert.AreEqual(3, firstTestPoint.CalculateDistanceTo(secondTestPoint));
         }
+
+        [TestMethod]
+        public void ToStringOverrideSuccess()
+        {
+            var testPoint = new Point(1, -2, 3, 10);
+            Assert.AreEqual("CoordinateX: 1, CoordinateY: -2, CoordinateZ: 3, Mass: 10", testPoint.ToString());
+        }
     }
 }
