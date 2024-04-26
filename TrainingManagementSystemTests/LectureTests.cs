@@ -6,7 +6,7 @@ namespace TrainingManagementSystemTests
     public class LectureTests
     {
         [TestMethod]
-        public void CloneSuccess()
+        public void DeepCloneSuccess()
         {
             var lecture = new Lecture("TestDescription", "TestTopic");
             var clonedLecture = lecture.Clone();

@@ -6,7 +6,7 @@ namespace TrainingManagementSystemTests
     public class PracticalLessonTests
     {
         [TestMethod]
-        public void CloneSuccess()
+        public void DeepCloneSuccess()
         {
             var practicalLesson = new PracticalLesson("TestDescription", "TestTaskLink", "TestSolutionLink");
             var clone = practicalLesson.Clone();
