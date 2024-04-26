@@ -16,7 +16,6 @@
             // ToString override check
             Console.WriteLine("\n" + nameof(shorterDiagonalMatrix) + ":" );
             Console.WriteLine(shorterDiagonalMatrix);
-
             Console.WriteLine("\n" + nameof(longerDiagonalMatrix) + ":");
             Console.WriteLine(longerDiagonalMatrix);
 
