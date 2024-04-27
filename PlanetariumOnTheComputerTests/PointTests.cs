@@ -6,6 +6,30 @@ namespace PlanetariumOnTheComputerTests
     public class PointTests
     {
         [TestMethod]
+        public void CoordinateXSetterTestSuccess()
+        {
+            var testPoint = new Point(1, 0, 0, 10);
+
+            Assert.AreEqual(1, testPoint.CoordinateX);
+        }
+
+        [TestMethod]
+        public void CoordinateYSetterTestSuccess()
+        {
+            var testPoint = new Point(0, 1, 0, 10);
+
+            Assert.AreEqual(1, testPoint.CoordinateY);
+        }
+
+        [TestMethod]
+        public void CoordinateZSetterTestSuccess()
+        {
+            var testPoint = new Point(0, 0, 1, 10);
+
+            Assert.AreEqual(1, testPoint.CoordinateZ);
+        }
+
+        [TestMethod]
         public void PointMassTestPositive()
         {
             var testPoint = new Point(1, 1, 1, 10);
@@ -32,7 +56,7 @@ namespace PlanetariumOnTheComputerTests
         [TestMethod]
         public void IsZeroNegative()
         {
-            var testPoint = new Point(0, 1, 0, 10); 
+            var testPoint = new Point(0, 1, 0, 10);
 
             Assert.IsFalse(testPoint.IsZero());
         }
