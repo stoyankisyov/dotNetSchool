@@ -22,6 +22,14 @@ namespace DiagonalMatrixTests
         }
 
         [TestMethod]
+        public void CreatingDiagonalMatrixArrayTestSuccess()
+        {
+            var diagonalMatrix = new DiagonalMatrix(1, 2);
+
+            Assert.AreEqual(2, diagonalMatrix.DiagonalElements[1]);
+        }
+
+        [TestMethod]
         public void IndexerGetterTestPossitive()
         {
             var diagonalMatrix = new DiagonalMatrix(1);
