@@ -3,15 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task1", "Task1", "{C65BDE2C-963F-4C33-99B6-269AD16CDC33}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework1", "Homework1", "{C65BDE2C-963F-4C33-99B6-269AD16CDC33}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task3", "Task3", "{C77951EA-E9A2-4F32-A2DB-A94C5EC83E22}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task1", "Task1", "{950EBE64-B4C6-4DB9-B044-D4458583B1AB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task2", "Task2", "{1FCC0111-28AC-4301-BE62-D714DB3FC7C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task3", "Task3", "{9EE23B8E-EDEF-4D18-8B3F-98485CB48B20}"
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task2", "Task2", "{6A84DD99-8A2B-456A-B082-41C707618FB1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework2", "Homework2", "{491FD4A3-C1BB-413B-B71C-AC5AE529FC5B}"
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagonalMatrix", "DiagonalMatrix\DiagonalMatrix.csproj", "{8A92B580-596C-459E-9073-DBBF7D1D81E6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagonalMatrixTests", "DiagonalMatrixTests\DiagonalMatrixTests.csproj", "{E5D523ED-E6AD-4CD3-ACCD-6487AF39A15E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task1", "Task1", "{B2EA64EA-CEC9-42A1-BD54-FA0CB08694F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanetariumOnTheComputer", "PlanetariumOnTheComputer\PlanetariumOnTheComputer.csproj", "{7730C561-721F-476C-A13C-4E391109FDD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetariumOnTheComputerTests", "PlanetariumOnTheComputerTests\PlanetariumOnTheComputerTests.csproj", "{A050A2F1-6584-4837-96C4-CFE7667A837B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +28,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7730C561-721F-476C-A13C-4E391109FDD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7730C561-721F-476C-A13C-4E391109FDD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7730C561-721F-476C-A13C-4E391109FDD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7730C561-721F-476C-A13C-4E391109FDD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A050A2F1-6584-4837-96C4-CFE7667A837B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A050A2F1-6584-4837-96C4-CFE7667A837B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A050A2F1-6584-4837-96C4-CFE7667A837B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A050A2F1-6584-4837-96C4-CFE7667A837B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8A92B580-596C-459E-9073-DBBF7D1D81E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8A92B580-596C-459E-9073-DBBF7D1D81E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A92B580-596C-459E-9073-DBBF7D1D81E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -30,6 +47,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{950EBE64-B4C6-4DB9-B044-D4458583B1AB} = {C65BDE2C-963F-4C33-99B6-269AD16CDC33}
+		{1FCC0111-28AC-4301-BE62-D714DB3FC7C6} = {C65BDE2C-963F-4C33-99B6-269AD16CDC33}
+		{9EE23B8E-EDEF-4D18-8B3F-98485CB48B20} = {C65BDE2C-963F-4C33-99B6-269AD16CDC33}
+		{B2EA64EA-CEC9-42A1-BD54-FA0CB08694F2} = {491FD4A3-C1BB-413B-B71C-AC5AE529FC5B}
+		{7730C561-721F-476C-A13C-4E391109FDD3} = {B2EA64EA-CEC9-42A1-BD54-FA0CB08694F2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43F33EC0-3751-4917-B4E7-66E9EAF50AC3}
