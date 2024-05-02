@@ -1,12 +1,15 @@
-﻿namespace TrainingManagementSystem
-{
-    public abstract class TrainingUnit
-    {
-        public string? Description { get; set; }
+﻿using TrainingManagementSystem.Interfaces;
 
-        protected TrainingUnit(string? description)
+namespace TrainingManagementSystem
+{
+    public abstract class TrainingUnit : TrainingEntity, ITrainingUnitClonable
+    {
+        protected TrainingUnit(string? description) 
+            : base(description)
         {
-            Description = description;
+            
         }
+
+        public abstract TrainingUnit Clone();
     }
 }

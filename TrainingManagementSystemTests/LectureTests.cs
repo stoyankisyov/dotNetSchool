@@ -1,4 +1,5 @@
-﻿using TrainingManagementSystem;
+﻿using System.Runtime.InteropServices;
+using TrainingManagementSystem;
 
 namespace TrainingManagementSystemTests
 {
@@ -8,10 +9,14 @@ namespace TrainingManagementSystemTests
         [TestMethod]
         public void DeepCloneSuccess()
         {
-            var lecture = new Lecture("TestDescription", "TestTopic");
-            var clonedLecture = lecture.Clone();
+            var original = new Lecture("TestDescription", "TestTopic");
 
-            Assert.AreNotEqual(lecture, clonedLecture);
+            var cloned = original.Clone();
+
+            Assert.IsNotNull(cloned);
+            Assert.AreNotSame(original, cloned);
+            Assert.AreEqual(original.Description, cloned.Description);
+            Assert.AreEqual(original.Topic, cloned.Topic);
         }
     }
 }

@@ -12,7 +12,7 @@
             SolutionLink = solutionLink;
         }
 
-        public PracticalLesson Clone()
+        public override PracticalLesson Clone()
         {
             return new PracticalLesson(Description, TaskLink, SolutionLink);
         }

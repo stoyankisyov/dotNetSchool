@@ -8,10 +8,15 @@ namespace TrainingManagementSystemTests
         [TestMethod]
         public void DeepCloneSuccess()
         {
-            var practicalLesson = new PracticalLesson("TestDescription", "TestTaskLink", "TestSolutionLink");
-            var clone = practicalLesson.Clone();
+            var original = new PracticalLesson("TestDescription", "TestTaskLink", "TestSolutionLink");
 
-            Assert.AreNotEqual(practicalLesson, clone);
+            var cloned = original.Clone();
+
+            Assert.IsNotNull(cloned);
+            Assert.AreNotSame(original, cloned);
+            Assert.AreEqual(original.Description, cloned.Description);
+            Assert.AreEqual(original.TaskLink, cloned.TaskLink);
+            Assert.AreEqual(original.SolutionLink, cloned.SolutionLink);
         }
     }
 }

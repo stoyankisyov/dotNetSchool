@@ -9,8 +9,8 @@
         {
             Topic = topic;
         }
-
-        public Lecture Clone()
+     
+        public override Lecture Clone()
         {
             return new Lecture(Description, Topic);
         }
