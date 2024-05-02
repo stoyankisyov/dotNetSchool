@@ -25,7 +25,7 @@
             get => IsElementOnMainDiagonal(i, j) ? DiagonalElements[i] : 0;
             set
             {
-                if (IsElementOnMainDiagonal(i, j))
+                if (IsElementOnMainDiagonal(i, j) && AreIndexesCorrect(i, j))
                 {
                     DiagonalElements[i] = value;
                 }
@@ -64,14 +64,14 @@
 
         public override int GetHashCode()
         {
-            int hash = 17;
+                int hash = 13;
 
-            foreach (var element in DiagonalElements)
-            {
-                hash = hash * 31 + element.GetHashCode();
-            }
+                foreach (var element in DiagonalElements)
+                {
+                    hash = hash * 7 + element;
+                }
 
-            return hash;
+                return hash;
         }
 
         public override string ToString()
@@ -92,7 +92,12 @@
 
         private bool IsElementOnMainDiagonal(int i, int j)
         {
-            return i == j && i >= 0 && i < Size;
+            return i == j;
+        }
+
+        private bool AreIndexesCorrect(int i, int j)
+        {
+            return i >= 0 && i < Size;
         }
     }
 }
