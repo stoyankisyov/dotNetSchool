@@ -14,7 +14,6 @@ namespace QueueCustomImplementationTests
             queue.Enqueue('b');
             queue.Enqueue('c');
 
-            // No other way to access the Elements
             Assert.AreEqual('a', queue.Dequeue());
             Assert.AreEqual('b', queue.Dequeue());
             Assert.AreEqual('c', queue.Dequeue());
