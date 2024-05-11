@@ -46,7 +46,7 @@ namespace QueueCustomImplementation
             }
             else
             {
-                if (_elementCount <= _initialCapacity)
+                if (_elementCount < _initialCapacity)
                 {
                     _elements[_elementCount] = item;
                 }
