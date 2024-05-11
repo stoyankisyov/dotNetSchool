@@ -30,14 +30,6 @@ namespace QueueCustomImplementationTests
         }
 
         [TestMethod]
-        public void DropFailure()
-        {
-            var queue = new QueueCustomImplementation.Queue<int>(1);
-
-            Assert.ThrowsException<InvalidOperationException>(() => queue.Drop());
-        }
-
-        [TestMethod]
         public void DequeueFailure()
         {
             var queue = new QueueCustomImplementation.Queue<int>(1);
@@ -113,7 +105,7 @@ namespace QueueCustomImplementationTests
             Assert.IsNotNull(tailQueue);
             Assert.AreNotSame(tailQueue, originalQueue);
 
-            originalQueue.Drop();
+            originalQueue.Dequeue();
 
             while (!tailQueue.IsEmpty())
             {

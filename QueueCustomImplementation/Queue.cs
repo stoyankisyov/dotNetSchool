@@ -4,48 +4,55 @@ namespace QueueCustomImplementation
 {
     public class Queue<T> : IGenericQueue<T>
     {
-        private int _elementCount;
-        private int _maxCapacity;
+        private int _headPosition = 0;
+        private int _elementCount = 0;
+        private int _initialCapacity;
         private T[] _elements;
 
-        public Queue(int queueElementsCapacity)
+        public Queue(int initialCapacity)
         {
-            _maxCapacity = queueElementsCapacity;
-            _elements = new T[_maxCapacity];
-            _elementCount = 0;
+            _initialCapacity = initialCapacity;
+            _elements = new T[_initialCapacity * 2];
+        }
+
+        private Queue(int queueElementsCapacity, int headIndex, int elementCount) : this(queueElementsCapacity)
+        {
+            _headPosition = headIndex;
+            _elementCount = elementCount;
         }
 
         public T Dequeue()
         {
-            var firstItem = _elements[0];
+            var firstItem = _elements[_headPosition];
 
             Drop();
 
             return firstItem;
         }
 
-        public void Drop()
-        {
-            if (IsEmpty())
-            {
-                throw new InvalidOperationException("Queue is empty.");
-            }
-
-            var newElements = new T[_elementCount - 1];
-            Array.Copy(_elements, 1, newElements, 0, _elementCount - 1);
-            _elements = newElements;
-            _elementCount--;
-        }
-
         public void Enqueue(T item)
         {
-            if (_elementCount == _maxCapacity)
+            if (_elementCount == _initialCapacity)
             {
                 throw new InvalidOperationException("The queue is full.");
             }
 
-            IncreaseArraySize();
-            _elements[_elementCount++] = item;
+            if (_headPosition >= _initialCapacity)
+            {
+                if (_initialCapacity + _elementCount < _initialCapacity * 2)
+                {
+                    _elements[_elementCount + _initialCapacity] = item;
+                }
+            }
+            else
+            {
+                if (_elementCount < _initialCapacity)
+                {
+                    _elements[_elementCount] = item;
+                }
+            }
+
+            _elementCount++;
         }
 
         public int Count()
@@ -62,9 +69,9 @@ namespace QueueCustomImplementation
         {
             var result = "";
 
-            foreach (var item in _elements)
+            for(int i=_headPosition; i<_elementCount; i++)
             {
-                result += item is not null ? item.ToString() : "";
+                result += _elements[i];
             }
 
             return result;
@@ -72,21 +79,59 @@ namespace QueueCustomImplementation
 
         public IGenericQueue<T> Clone()
         {
-            var clonedQueue = new Queue<T>(_maxCapacity);
+            var clonedQueue = new Queue<T>(_initialCapacity, _headPosition, _elementCount);
 
-            foreach (var item in _elements)
+            if (_headPosition == _initialCapacity)
             {
-                clonedQueue.Enqueue(item);
+                for (int i = 0; i < _elementCount; i++)
+                {
+                    clonedQueue._elements[_initialCapacity + i] = _elements[_initialCapacity + i];
+                }
+            }
+            else
+            {
+                for (int i = 0; i < _elementCount; i++)
+                {
+                    clonedQueue._elements[i] = _elements[i];
+                }
             }
 
             return clonedQueue;
         }
 
-        private void IncreaseArraySize()
+        private void Drop()
         {
-            var newArray = new T[_elementCount + 1];
-            Array.Copy(_elements, newArray, _elementCount);
-            _elements = newArray;
+            if (IsEmpty())
+            {
+                throw new InvalidOperationException("Queue is empty.");
+            }
+
+            if (_headPosition < _initialCapacity)
+            {
+                _elements[0] = default!;
+
+                for (int i = 0; i < _elementCount - 1; i++)
+                {
+                    _elements[_initialCapacity + i] = _elements[i + 1];
+                    _elements[i + 1] = default!;
+                }
+
+                _headPosition = _initialCapacity;
+            }
+            else
+            {
+                _elements[_initialCapacity] = default!;
+
+                for (int i = 0; i < _elementCount - 1; i++)
+                {
+                    _elements[i] = _elements[_initialCapacity + 1 + i];
+                    _elements[_initialCapacity + 1 + i] = default!;
+                }
+
+                _headPosition = 0;
+            }
+
+            _elementCount--;
         }
     }
 }
