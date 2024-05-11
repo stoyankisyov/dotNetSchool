@@ -55,11 +55,6 @@ namespace QueueCustomImplementation
             _elementCount++;
         }
 
-        public int Count()
-        {
-            return _elementCount;
-        }
-
         public bool IsEmpty()
         {
             return _elementCount == 0;

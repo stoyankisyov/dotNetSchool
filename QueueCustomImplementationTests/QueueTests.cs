@@ -38,16 +38,6 @@ namespace QueueCustomImplementationTests
         }
 
         [TestMethod]
-        public void CountSuccess()
-        {
-            var queue = new QueueCustomImplementation.Queue<int>(2);
-            queue.Enqueue(1);
-            queue.Enqueue(2);
-
-            Assert.AreEqual(2, queue.Count());
-        }
-
-        [TestMethod]
         public void IsEmptyPossitive()
         {
             var queue = new QueueCustomImplementation.Queue<int>(2);
