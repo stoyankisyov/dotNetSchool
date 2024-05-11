@@ -37,7 +37,7 @@ namespace QueueCustomImplementation
                 throw new InvalidOperationException("The queue is full.");
             }
 
-            if (_headPosition >= _initialCapacity)
+            if (_headPosition == _initialCapacity)
             {
                 if (_initialCapacity + _elementCount < _initialCapacity * 2)
                 {
@@ -46,7 +46,7 @@ namespace QueueCustomImplementation
             }
             else
             {
-                if (_elementCount < _initialCapacity)
+                if (_elementCount <= _initialCapacity)
                 {
                     _elements[_elementCount] = item;
                 }

@@ -26,12 +26,12 @@ namespace QueueCustomImplementation
             Console.WriteLine($"Queue after Tail(): {tailQueue}");
             Console.WriteLine($"Original unchanged queue: {queue}");
 
-            Console.WriteLine("Going above max capacity, exception is thrown: ");
-            queue.Enqueue(8);
+            //Console.WriteLine("Going above max capacity, exception is thrown: ");
+            //queue.Enqueue(8);
 
-            Console.Write("Dequeue from empty queue, exception is thrown: ");
-            var emptyQueue = new Queue<string>(1);
-            emptyQueue.Dequeue();
+            //Console.Write("Dequeue from empty queue, exception is thrown: ");
+            //var emptyQueue = new Queue<string>(1);
+            //emptyQueue.Dequeue();
         }
     }
 }
