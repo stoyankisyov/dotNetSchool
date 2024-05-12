@@ -19,7 +19,7 @@ namespace QueueCustomImplementation
 
             queue.Enqueue(5);
             queue.Enqueue(6);
-            
+
             Console.WriteLine($"After Increasing size to maximum: {queue}");
 
             var tailQueue = queue.Tail();
@@ -32,6 +32,16 @@ namespace QueueCustomImplementation
             Console.Write("Dequeue from empty queue, exception is thrown: ");
             var emptyQueue = new Queue<string>(1);
             emptyQueue.Dequeue();
+
+            var alternativeQueue = new AlternativeQueue<int>(5);
+            alternativeQueue.Enqueue(1);
+            alternativeQueue.Enqueue(2);
+            alternativeQueue.Enqueue(3);
+            alternativeQueue.Enqueue(4);
+            alternativeQueue.Enqueue(5);
+            alternativeQueue.Dequeue();
+            alternativeQueue.Enqueue(5);
+            var tail = alternativeQueue.Tail();
         }
     }
 }
