@@ -35,10 +35,11 @@
             matrix1[1, 1] = 2;
             matrix1[2, 2] = 3;
 
-            var matrix2 = new GenericDiagonalMatrix<int>(3);
+            var matrix2 = new GenericDiagonalMatrix<int>(4);
             matrix2[0, 0] = 4;
             matrix2[1, 1] = 5;
             matrix2[2, 2] = 6;
+            matrix2[3, 3] = 7;
 
             // Generic matrix Addition() check
             var resultMatrix = matrix1.Addition(matrix2, (x, y) => x + y);

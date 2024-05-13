@@ -14,16 +14,10 @@ namespace DiagonalMatrixTests
         }
 
         [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
         public void GenericDiagonalMatrixSizeTestNegative()
         {
-            try
-            {
-                var matrix = new GenericDiagonalMatrix<int>(-3);
-            }
-            catch (ArgumentException ex)
-            {
-                Assert.AreEqual("Size can't be a negative number!", ex.Message);
-            }
+            var matrix = new GenericDiagonalMatrix<int>(-3);
         }
 
         [TestMethod]
@@ -46,33 +40,20 @@ namespace DiagonalMatrixTests
         }
 
         [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void IndexerInvalidIndexesGetterExcepitonTestSuccess()
         {
-            try
-            {
-                var matrix = new GenericDiagonalMatrix<int>(2);
-                matrix[0, 0] = 1;
-                
-                var element = matrix[0, 5];
-            }
-            catch (ArgumentOutOfRangeException ex)
-            {
-                Assert.AreEqual("Specified argument was out of the range of valid values. (Parameter 'Invalid indexes!')", ex.Message);
-            }
+            var matrix = new GenericDiagonalMatrix<int>(2);
+            matrix[0, 0] = 1;
+            var element = matrix[0, 5];
         }
 
         [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void IndexerInvalidIndexesSetterExcepitonTestSuccess()
         {
-            try
-            {
-                var matrix = new GenericDiagonalMatrix<int>(2);
-                matrix[5, 5] = 1;
-            }
-            catch (ArgumentOutOfRangeException ex)
-            {
-                Assert.AreEqual("Specified argument was out of the range of valid values. (Parameter 'Invalid indexes!')", ex.Message);
-            }
+            var matrix = new GenericDiagonalMatrix<int>(2);
+            matrix[5, 5] = 1;
         }
 
         [TestMethod]

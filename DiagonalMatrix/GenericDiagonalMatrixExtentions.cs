@@ -9,11 +9,11 @@
 
             for (int i = 0; i < greaterSize; i++)
             {
-                if (i >= firstMatrix.Size - 1)
+                if (i > firstMatrix.Size - 1)
                 {
                     resultMatrix[i, i] = AddFunction(default, secondMatrix[i, i]);
                 }
-                else if (i >= secondMatrix.Size - 1)
+                else if (i > secondMatrix.Size - 1)
                 {
                     resultMatrix[i, i] = AddFunction(firstMatrix[i, i], default);
                 }
