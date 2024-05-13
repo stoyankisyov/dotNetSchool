@@ -1,6 +1,6 @@
 ﻿namespace QueueCustomImplementation.Interfaces
 {
-    public interface IGenericQueue<T>
+    public interface IGenericQueue<T> where T : struct
     {
         IGenericQueue<T> Clone();
         T Dequeue();
