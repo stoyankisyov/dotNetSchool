@@ -3,7 +3,7 @@
     public class GenericDiagonalMatrix<T>
     {
         private T[] _diagonalElements;
-        private ArgumentOutOfRangeException invalidIndexesException = new ArgumentOutOfRangeException("Invalid indexes!");
+        private readonly ArgumentOutOfRangeException invalidIndexesException = new ArgumentOutOfRangeException("Invalid indexes!");
 
         public int Size { get; }
 
