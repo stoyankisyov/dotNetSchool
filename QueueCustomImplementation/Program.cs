@@ -30,7 +30,7 @@ namespace QueueCustomImplementation
             queue.Enqueue(8);
 
             Console.Write("Dequeue from empty queue, exception is thrown: ");
-            var emptyQueue = new Queue<string>(1);
+            var emptyQueue = new Queue<char>(1);
             emptyQueue.Dequeue();
 
             var alternativeQueue = new AlternativeQueue<int>(5);
