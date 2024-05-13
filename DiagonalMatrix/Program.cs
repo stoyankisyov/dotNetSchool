@@ -1,6 +1,4 @@
-﻿using DiagonalMatrixNamespace;
-
-namespace DiagonalMatrixNamespace
+﻿namespace DiagonalMatrixNamespace
 {
     internal class Program
     {
