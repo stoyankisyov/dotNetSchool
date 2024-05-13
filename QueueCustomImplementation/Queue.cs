@@ -2,7 +2,7 @@
 
 namespace QueueCustomImplementation
 {
-    public class Queue<T> : IGenericQueue<T>
+    public class Queue<T> : IGenericQueue<T> where T : struct
     {
         private int _headPosition = 0;
         private int _elementCount = 0;

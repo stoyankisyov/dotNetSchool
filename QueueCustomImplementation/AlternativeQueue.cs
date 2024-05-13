@@ -2,7 +2,7 @@
 
 namespace QueueCustomImplementation
 {
-    public class AlternativeQueue<T> : IGenericQueue<T>
+    public class AlternativeQueue<T> : IGenericQueue<T> where T : struct
     {
         private int _elementCount = 0;
         private int _maxCapacity;
