@@ -1,4 +1,6 @@
-﻿namespace DiagonalMatrixNamespace
+﻿using DiagonalMatrixNamespace;
+
+namespace DiagonalMatrixNamespace
 {
     internal class Program
     {
@@ -14,7 +16,7 @@
             Console.WriteLine(nameof(shorterDiagonalMatrix) + " Size = " + shorterDiagonalMatrix.Size);
 
             // ToString override check
-            Console.WriteLine("\n" + nameof(shorterDiagonalMatrix) + ":" );
+            Console.WriteLine("\n" + nameof(shorterDiagonalMatrix) + ":");
             Console.WriteLine(shorterDiagonalMatrix);
             Console.WriteLine("\n" + nameof(longerDiagonalMatrix) + ":");
             Console.WriteLine(longerDiagonalMatrix);
@@ -29,6 +31,24 @@
             // Equals check
             Console.WriteLine(nameof(shorterDiagonalMatrix) + " and " + nameof(shorterDiagonalMatrixCopy) + " are equal?: " + shorterDiagonalMatrix.Equals(shorterDiagonalMatrixCopy));
             Console.WriteLine(nameof(shorterDiagonalMatrix) + " and " + nameof(longerDiagonalMatrix) + " are equal?: " + shorterDiagonalMatrix.Equals(longerDiagonalMatrix));
+
+            var matrix1 = new GenericDiagonalMatrix<int>(3);
+            matrix1[0, 0] = 1;
+            matrix1[1, 1] = 2;
+            matrix1[2, 2] = 3;
+
+            var matrix2 = new GenericDiagonalMatrix<int>(3);
+            matrix2[0, 0] = 4;
+            matrix2[1, 1] = 5;
+            matrix2[2, 2] = 6;
+
+            // Generic matrix Addition() check
+            var resultMatrix = matrix1.Addition(matrix2, (x, y) => x + y);
+
+            // Tracker check
+            var tracker = new MatrixTracker<int>(resultMatrix);
+            resultMatrix[0, 0] = 10;
+            tracker.Undo();
         }
     }
 }
