@@ -97,7 +97,7 @@
 
         private bool AreIndexesCorrect(int i, int j)
         {
-            return i >= 0 && i < Size;
+            return i >= 0 && j < Size;
         }
     }
 }
