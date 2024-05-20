@@ -55,9 +55,9 @@ namespace RationalNumbersTests
             RationalNumber? nullRationalNumber = null;
 
             Assert.AreEqual(1, greaterThanFirstRationalNumber.CompareTo(firstRationalNumber));
-            Assert.AreEqual(1, firstRationalNumber.CompareTo(nullRationalNumber));
             Assert.AreEqual(0, firstRationalNumber.CompareTo(sameAsFirstRationalNumber));
             Assert.AreEqual(-1, firstRationalNumber.CompareTo(greaterThanFirstRationalNumber));
+            Assert.ThrowsException<InvalidOperationException>(() => firstRationalNumber.CompareTo(nullRationalNumber));
         }
 
         [TestMethod]

@@ -11,8 +11,8 @@
             {
                 throw new ArgumentException("Denumerator can't be 0!");
             }
-
-            int greatestCommonDivisor = GetGreatestCommonDivisor(numerator, denumerator);
+            var rationalNumberHelper = new RationalNumberHelper();
+            int greatestCommonDivisor = rationalNumberHelper.GetGreatestCommonDivisor(numerator, denumerator);
             Numerator = numerator / greatestCommonDivisor;
             Denominator = denumerator / greatestCommonDivisor;
 
@@ -47,7 +47,7 @@
         {
             if (other is null)
             {
-                return 1;
+                throw new InvalidOperationException("Object is null.");
             }
 
             return (Numerator * other.Denominator).CompareTo(Denominator * other.Numerator);
@@ -86,11 +86,6 @@
         public static implicit operator RationalNumber(int number)
         {
             return new RationalNumber(number, 1);
-        }
-
-        private static int GetGreatestCommonDivisor(int firstNumber, int secondNumber)
-        {
-            return secondNumber == 0 ? Math.Abs(firstNumber) : GetGreatestCommonDivisor(secondNumber, firstNumber % secondNumber);
         }
     }
 }
