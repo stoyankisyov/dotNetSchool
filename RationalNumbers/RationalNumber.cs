@@ -11,6 +11,7 @@
             {
                 throw new ArgumentException("Denumerator can't be 0!");
             }
+
             var rationalNumberHelper = new RationalNumberHelper();
             int greatestCommonDivisor = rationalNumberHelper.GetGreatestCommonDivisor(numerator, denumerator);
             Numerator = numerator / greatestCommonDivisor;
