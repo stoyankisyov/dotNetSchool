@@ -18,7 +18,7 @@ namespace SparseMatrixApplication
 
             _rowCount = rowCount;
             _columnCount = columnCount;
-            _elements = new Dictionary<(int, int), long>();
+            _elements = [];
         }
 
         public long this[int i, int j]
