@@ -1,4 +1,3 @@
-using NuGet.Frameworks;
 using SparseMatrixApplication;
 
 namespace SparseMatrixTests

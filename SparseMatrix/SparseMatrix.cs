@@ -7,7 +7,7 @@ namespace SparseMatrixApplication
         private readonly int _rowCount;
         private readonly int _columnCount;
         private readonly Dictionary<(int, int), long> _elements;
-        private readonly IndexOutOfRangeException _indexOutOfRangeException = new IndexOutOfRangeException("Invalid indexes.");
+        private readonly IndexOutOfRangeException _invalidIndexesException = new IndexOutOfRangeException("Invalid indexes.");
 
         public SparseMatrix(int rowCount, int columnCount)
         {
@@ -27,7 +27,7 @@ namespace SparseMatrixApplication
             {
                 if (!AreIndexesValid(i, j))
                 {
-                    throw _indexOutOfRangeException;
+                    throw _invalidIndexesException;
                 }
 
                 return _elements.TryGetValue((i, j), out long value) ? value : 0;
@@ -36,7 +36,7 @@ namespace SparseMatrixApplication
             {
                 if (!AreIndexesValid(i, j))
                 {
-                    throw _indexOutOfRangeException;
+                    throw _invalidIndexesException;
                 }
 
                 if (value != 0)
