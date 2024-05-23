@@ -15,34 +15,25 @@ namespace BookCatalog
         {
             get
             {
-                var bookHelper = new BookHelper();
-
-                if (!bookHelper.IsIsbnInCorrectFormat(isbn))
+                if (!BookHelper.IsIsbnInCorrectFormat(isbn))
                 {
                     throw new ArgumentException("Invalid ISBN format.");
                 }
 
-                return _books[bookHelper.UnifyIsbn(isbn)];
+                return _books[BookHelper.UnifyIsbn(isbn)];
             }
         }
 
         public void Add(Book book)
         {
-            var bookHelper = new BookHelper();
-
-            if (!_books.ContainsKey(bookHelper.UnifyIsbn(book.Isbn)))
+            if (!_books.ContainsKey(BookHelper.UnifyIsbn(book.Isbn)))
             {
                 _books.Add(book.Isbn, book);
             }
         }
 
-        public IEnumerator<Book> GetEnumerator()
-        {
-            foreach (var book in _books)
-            {
-                yield return book.Value;
-            }
-        }
+        public IEnumerator<Book> GetEnumerator() 
+            => _books.Select(x => x.Value).GetEnumerator();
 
         IEnumerator IEnumerable.GetEnumerator()
         {

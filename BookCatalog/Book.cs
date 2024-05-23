@@ -9,19 +9,17 @@
 
         public Book(string isbn, string title, DateOnly? publicationDate, HashSet<string> authors)
         {
-            var bookHelper = new BookHelper();
-
             if (string.IsNullOrEmpty(title))
             {
                 throw new ArgumentException("Title can't be null or empty");
             }
 
-            if (!bookHelper.IsIsbnInCorrectFormat(isbn))
+            if (!BookHelper.IsIsbnInCorrectFormat(isbn))
             {
                 throw new ArgumentException("Invalid ISBN format.");
             }
 
-            Isbn = bookHelper.UnifyIsbn(isbn);
+            Isbn = BookHelper.UnifyIsbn(isbn);
             Title = title;
             PublicationDate = publicationDate;
             Authors = authors;
