@@ -1,13 +1,15 @@
 ﻿using System.Collections;
+using System.Text;
 
 namespace SparseMatrixApplication
 {
     public class SparseMatrix : IEnumerable<long>
     {
-        private readonly int _rowCount;
-        private readonly int _columnCount;
-        private readonly Dictionary<(int, int), long> _elements;
         private readonly IndexOutOfRangeException _invalidIndexesException = new IndexOutOfRangeException("Invalid indexes.");
+
+        public int RowCount { get; }
+        private int ColumnCount { get; }
+        private Dictionary<(int, int), long> Elements { get; }
 
         public SparseMatrix(int rowCount, int columnCount)
         {
@@ -16,9 +18,9 @@ namespace SparseMatrixApplication
                 throw new ArgumentException("Invalid number of rows or columns.");
             }
 
-            _rowCount = rowCount;
-            _columnCount = columnCount;
-            _elements = [];
+            RowCount = rowCount;
+            ColumnCount = columnCount;
+            Elements = [];
         }
 
         public long this[int i, int j]
@@ -30,7 +32,7 @@ namespace SparseMatrixApplication
                     throw _invalidIndexesException;
                 }
 
-                return _elements.TryGetValue((i, j), out long value) ? value : 0;
+                return Elements.TryGetValue((i, j), out long value) ? value : 0;
             }
             set
             {
@@ -41,37 +43,37 @@ namespace SparseMatrixApplication
 
                 if (value != 0)
                 {
-                    _elements[(i, j)] = value;
+                    Elements[(i, j)] = value;
                 }
                 else
                 {
-                    _elements.Remove((i, j));
+                    Elements.Remove((i, j));
                 }
             }
         }
 
         public override string ToString()
         {
-            var result = "";
+            var stringBuilderResult = new StringBuilder();
 
-            for (int i = 0; i < _rowCount; i++)
+            for (int i = 0; i < RowCount; i++)
             {
-                for (int j = 0; j < _columnCount; j++)
+                for (int j = 0; j < ColumnCount; j++)
                 {
-                    result += this[i, j] + " ";
+                    stringBuilderResult.Append(this[i, j] + " ");
                 }
 
-                result += "\n";
+                stringBuilderResult.Append("\n");
             }
 
-            return result;
+            return stringBuilderResult.ToString();
         }
 
         public IEnumerator<long> GetEnumerator()
         {
-            for (int i = 0; i < _rowCount; i++)
+            for (int i = 0; i < RowCount; i++)
             {
-                for (int j = 0; j < _columnCount; j++)
+                for (int j = 0; j < ColumnCount; j++)
                 {
                     yield return this[i, j];
                 }
@@ -84,31 +86,12 @@ namespace SparseMatrixApplication
         }
 
         public IEnumerable<(int, int, long)> GetNonzeroElements()
-        {
-            var sortedElementsByColumn = _elements
-                .OrderBy(x => x.Key.Item2)
-                    .ThenBy(x => x.Key.Item1)
-                .ToDictionary();
-
-            foreach (var keyValuePair in sortedElementsByColumn)
-            {
-                yield return (keyValuePair.Key.Item1, keyValuePair.Key.Item2, keyValuePair.Value);
-            }
-        }
+            => Elements.OrderBy(x => x.Key.Item2).ThenBy(x => x.Key.Item1).Select(x => (x.Key.Item1, x.Key.Item2, x.Value));
 
         public int GetCount(long element)
-        {
-            if (element != 0)
-            {
-                return _elements.Where(x => x.Value == element).Count();
-            }
-
-            return (_rowCount * _columnCount) - _elements.Count;
-        }
+            => element != 0 ? Elements.Where(x => x.Value == element).Count() : (RowCount * ColumnCount) - Elements.Count;
 
         private bool AreIndexesValid(int row, int column)
-        {
-            return row >= 0 && row < _rowCount && column >= 0 && column < _columnCount;
-        }
+            => row >= 0 && row < RowCount && column >= 0 && column < ColumnCount;
     }
 }
