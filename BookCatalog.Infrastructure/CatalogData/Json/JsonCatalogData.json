@@ -1,0 +1,70 @@
+[
+  {
+    "Isbn": "1234567891234",
+    "Title": "TestBook1",
+    "PublicationDate": "2000-01-01",
+    "Authors": [
+      {
+        "FirstName": "Johny",
+        "LastName": "Walker",
+        "BirthDate": "1999-05-02"
+      },
+      {
+        "FirstName": "Jim",
+        "LastName": "Beam",
+        "BirthDate": "1929-05-05"
+      }
+    ]
+  },
+  {
+    "Isbn": "3234567852424",
+    "Title": "TestBook2",
+    "PublicationDate": "2000-12-12",
+    "Authors": [
+      {
+        "FirstName": "Mike",
+        "LastName": "Tyson",
+        "BirthDate": "1999-05-02"
+      },
+      {
+        "FirstName": "Jack",
+        "LastName": "Sparrow",
+        "BirthDate": "1929-05-05"
+      }
+    ]
+  },
+  {
+    "Isbn": "2234567894424",
+    "Title": "TestBook3",
+    "PublicationDate": "2000-12-12",
+    "Authors": [
+      {
+        "FirstName": "Mike",
+        "LastName": "Tyson",
+        "BirthDate": "1999-05-02"
+      },
+      {
+        "FirstName": "Jack",
+        "LastName": "Sparrow",
+        "BirthDate": "1929-05-05"
+      }
+    ]
+  },
+  {
+    "Isbn": "8234567855134",
+    "Title": "TestBook4",
+    "PublicationDate": "2000-01-01",
+    "Authors": [
+      {
+        "FirstName": "Johny",
+        "LastName": "Walker",
+        "BirthDate": "1999-05-02"
+      },
+      {
+        "FirstName": "Jim",
+        "LastName": "Beam",
+        "BirthDate": "1929-05-05"
+      }
+    ]
+  }
+]

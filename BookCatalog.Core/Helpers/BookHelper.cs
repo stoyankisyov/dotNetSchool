@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace BookCatalog
+namespace BookCatalog.Core.Helpers
 {
     public class BookHelper
     {
