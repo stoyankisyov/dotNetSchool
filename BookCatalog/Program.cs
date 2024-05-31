@@ -34,14 +34,12 @@ namespace BookCatalog
             await xmlRepository.AddAsync(catalog);
 
             var retrievedCatalogFromXml = await xmlRepository.GetAsync();
-
             var xmlRetrieveSuccessful = CheckCatalogIdentity(catalog, retrievedCatalogFromXml);
 
             var jsonRepository = new JsonCatalogRepository();
             await jsonRepository.AddAsync(retrievedCatalogFromXml);
 
             var retrievedCatalogFromJson = await jsonRepository.GetAsync();
-
             var jsonRetrieveCheck = CheckCatalogIdentity(catalog, retrievedCatalogFromJson);
         }
 
