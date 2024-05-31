@@ -8,17 +8,19 @@ namespace BookCatalog.Infrastructure.Repositories
     {
         private const string _filePath = "../../../../BookCatalog.Infrastructure/CatalogData/Xml/XmlCatalogData.xml";
 
-        public void Add(Catalog catalog)
+        public async Task AddAsync(Catalog catalog)
         {
             var serializer = new XmlSerializer(typeof(Catalog));
 
-            using (var writer = new StreamWriter(_filePath))
+            await using (var stream = new FileStream(_filePath, FileMode.Create, FileAccess.Write, FileShare.None))
+            await using (var writer = new StreamWriter(stream))
             {
                 serializer.Serialize(writer, catalog);
+                await writer.FlushAsync();
             }
         }
 
-        public Catalog Get()
+        public async Task<Catalog> GetAsync()
         {
             if (!File.Exists(_filePath))
             {
@@ -27,7 +29,8 @@ namespace BookCatalog.Infrastructure.Repositories
 
             var serializer = new XmlSerializer(typeof(Catalog));
 
-            using (var reader = new StreamReader(_filePath))
+            await using (var stream = new FileStream(_filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
+            using (var reader = new StreamReader(stream))
             {
                 var catalog = (Catalog?)serializer.Deserialize(reader);
 

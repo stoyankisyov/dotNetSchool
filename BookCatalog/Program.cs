@@ -5,7 +5,7 @@ namespace BookCatalog
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var author1 = new Author("John", "Doe", new DateOnly(1970, 1, 1));
             var author2 = new Author("Jane", "Smith", new DateOnly(1980, 2, 2));
@@ -31,16 +31,16 @@ namespace BookCatalog
             catalog.AddRange(books);
 
             var xmlRepository = new XmlCatalogRepository();
-            xmlRepository.Add(catalog);
+            await xmlRepository.AddAsync(catalog);
 
-            var retrievedCatalogFromXml = xmlRepository.Get();
+            var retrievedCatalogFromXml = await xmlRepository.GetAsync();
 
             var xmlRetrieveSuccessful = CheckCatalogIdentity(catalog, retrievedCatalogFromXml);
 
             var jsonRepository = new JsonCatalogRepository();
-            jsonRepository.Add(retrievedCatalogFromXml);
+            await jsonRepository.AddAsync(retrievedCatalogFromXml);
 
-            var retrievedCatalogFromJson = jsonRepository.Get();
+            var retrievedCatalogFromJson = await jsonRepository.GetAsync();
 
             var jsonRetrieveCheck = CheckCatalogIdentity(catalog, retrievedCatalogFromJson);
         }

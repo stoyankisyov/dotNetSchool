@@ -9,7 +9,7 @@ namespace BookCatalog.Infrastructure.Repositories
     {
         private const string _filesPath = "../../../../BookCatalog.Infrastructure/CatalogData/Json/";
 
-        public void Add(Catalog catalog)
+        public async Task AddAsync(Catalog catalog)
         {
             var options = new JsonSerializerOptions
             {
@@ -31,11 +31,12 @@ namespace BookCatalog.Infrastructure.Repositories
 
                 var authorJsonPath = Path.Combine(_filesPath, $"{author.FirstName}_{author.LastName}.json");
                 var serializedAuthorCatalog = JsonSerializer.Serialize(authorCatalog.BookList, options);
-                File.WriteAllText(authorJsonPath, serializedAuthorCatalog);
+                
+                await File.WriteAllTextAsync(authorJsonPath, serializedAuthorCatalog);
             }
         }
 
-        public Catalog Get()
+        public async Task<Catalog> GetAsync()
         {
             var restoredCatalog = new Catalog();
             var options = new JsonSerializerOptions
@@ -48,7 +49,7 @@ namespace BookCatalog.Infrastructure.Repositories
 
             foreach (var jsonFile in jsonFiles)
             {
-                var fileContent = File.ReadAllText(jsonFile);
+                var fileContent = await File.ReadAllTextAsync(jsonFile);
                 var books = JsonSerializer.Deserialize<List<Book>>(fileContent, options);
                 if (books != null)
                 {

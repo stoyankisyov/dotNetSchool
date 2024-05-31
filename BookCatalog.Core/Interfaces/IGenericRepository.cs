@@ -2,7 +2,7 @@
 {
     public interface IGenericRepository<T>
     {
-        void Add(T item);
-        T Get();
+        Task AddAsync(T item);
+        Task<T> GetAsync();
     }
 }
