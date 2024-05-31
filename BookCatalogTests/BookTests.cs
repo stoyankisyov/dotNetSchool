@@ -1,4 +1,4 @@
-﻿using BookCatalog;
+﻿using BookCatalog.Core.Models;
 
 namespace BookCatalogTests
 {
@@ -9,21 +9,27 @@ namespace BookCatalogTests
         [ExpectedException(typeof(ArgumentException))]
         public void NullTitleExceptionSuccess()
         {
-            var book = new Book("2234567894424", null!, new DateOnly(2000, 12, 12), ["Mike", "Nike", "John"]);
+            var author1 = new Author("John", "Doe", new DateOnly(1970, 1, 1));
+
+            var book = new Book("2234567894424", null!, new DateOnly(2000, 12, 12), [author1]);
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void EmptyTitleExceptionSuccess()
         {
-            var book = new Book("2234567894424", "", new DateOnly(2000, 12, 12), ["Mike", "Nike", "John"]);
+            var author1 = new Author("John", "Doe", new DateOnly(1970, 1, 1));
+
+            var book = new Book("2234567894424", "", new DateOnly(2000, 12, 12), [author1]);
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void InvalidIsbnExceptionSuccess()
         {
-            var book = new Book("2-2-3", "A", new DateOnly(2000, 12, 12), ["Mike", "Nike", "John"]);
+            var author1 = new Author("John", "Doe", new DateOnly(1970, 1, 1));
+
+            var book = new Book("2-2-3", "A", new DateOnly(2000, 12, 12), [author1]);
         }
     }
 }

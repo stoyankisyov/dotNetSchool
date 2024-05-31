@@ -1,6 +1,5 @@
 ﻿using BookCatalog.Core.Models;
 using BookCatalog.Infrastructure.Repositories;
-using System.Xml.Linq;
 
 namespace BookCatalog
 {
@@ -36,21 +35,25 @@ namespace BookCatalog
 
             var retrievedCatalogFromXml = xmlRepository.Get();
 
-            // Identity Check
-            if (retrievedCatalogFromXml.Count() == catalog.Count())
-            {
-                foreach (var item in retrievedCatalogFromXml)
-                {
-                    if (!catalog.Books.ContainsKey(item.Isbn))
-                    {
-                        throw new Exception("Item not found in initial catalog.");
-                    }
-                }
-            }
+            var xmlRetrieveSuccessful = CheckCatalogIdentity(catalog, retrievedCatalogFromXml);
 
-            //var jsonRepository = new JsonCatalogRepository();
-            //jsonRepository.Add(catalog);
-            //var catalog1 = jsonRepository.Get();
+            var jsonRepository = new JsonCatalogRepository();
+            jsonRepository.Add(retrievedCatalogFromXml);
+
+            var retrievedCatalogFromJson = jsonRepository.Get();
+
+            var jsonRetrieveCheck = CheckCatalogIdentity(catalog, retrievedCatalogFromJson);
         }
+
+        private static bool CheckCatalogIdentity(Catalog original, Catalog retrieved)
+                => original.Books.Count == retrieved.Books.Count &&
+                                   retrieved.Books.All(book => original.Books.ContainsKey(book.Key) && BooksAreEqual(original.Books[book.Key], book.Value));
+
+        private static bool BooksAreEqual(Book original, Book retrieved)
+                => original.Isbn == retrieved.Isbn &&
+                                   original.Title == retrieved.Title &&
+                                   original.PublicationDate == retrieved.PublicationDate &&
+                                   original.Authors.Count == retrieved.Authors.Count &&
+                                   original.Authors.All(author => retrieved.Authors.Any(a => a.Equals(author)));
     }
 }

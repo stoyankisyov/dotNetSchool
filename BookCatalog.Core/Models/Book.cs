@@ -2,19 +2,41 @@
 
 using System.Xml.Serialization;
 using BookCatalog.Core.Helpers;
+using BookCatalog.Core.Wrappers;
 
 namespace BookCatalog.Core.Models
 {
     public class Book
     {
+        private string _title;
+
         [XmlElement("Isbn")]
         public string Isbn { get; set; }
 
         [XmlElement("Title")]
-        public string Title { get; set; }
+        public string Title
+        {
+            get => _title;
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentException("Title can't be null or empty");
+                }
+
+                _title = value;
+            }
+        }
+
+        [XmlIgnore]
+        public DateOnly? PublicationDate { get; set; }
 
         [XmlElement("PublicationDate")]
-        public DateOnly? PublicationDate { get; set; }
+        public DateOnlyXmlWrapper PublicationDateXml
+        {
+            get => PublicationDate.HasValue ? new DateOnlyXmlWrapper(PublicationDate.Value) : null;
+            set => PublicationDate = value?.Date;
+        }
 
         [XmlArray("Authors")]
         [XmlArrayItem("Author")]
@@ -24,11 +46,6 @@ namespace BookCatalog.Core.Models
 
         public Book(string isbn, string title, DateOnly? publicationDate, HashSet<Author> authors)
         {
-            if (string.IsNullOrEmpty(title))
-            {
-                throw new ArgumentException("Title can't be null or empty");
-            }
-
             if (!BookHelper.IsIsbnInCorrectFormat(isbn))
             {
                 throw new ArgumentException("Invalid ISBN format.");

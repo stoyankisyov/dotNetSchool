@@ -14,11 +14,8 @@ namespace BookCatalog.Core.Models
         [XmlArrayItem("Book")]
         public List<Book> BookList
         {
-            get => Books.Values.ToList();
-            set
-            {
-                Books = value.ToDictionary(book => BookHelper.UnifyIsbn(book.Isbn));
-            }
+            get => [.. Books.Values];
+            set => Books = value.ToDictionary(book => BookHelper.UnifyIsbn(book.Isbn));
         }
 
         public Catalog()
@@ -29,6 +26,7 @@ namespace BookCatalog.Core.Models
         public void Add(Book book)
         {
             var unifiedIsbn = BookHelper.UnifyIsbn(book.Isbn);
+
             if (!Books.ContainsKey(unifiedIsbn))
             {
                 Books.Add(unifiedIsbn, book);
@@ -45,15 +43,7 @@ namespace BookCatalog.Core.Models
 
         public Book this[string isbn]
         {
-            get
-            {
-                if (!BookHelper.IsIsbnInCorrectFormat(isbn))
-                {
-                    throw new ArgumentException("Invalid ISBN format.");
-                }
-
-                return Books[BookHelper.UnifyIsbn(isbn)];
-            }
+            get => !BookHelper.IsIsbnInCorrectFormat(isbn) ? throw new ArgumentException("Invalid ISBN format.") : Books[BookHelper.UnifyIsbn(isbn)];
         }
 
         public IEnumerator<Book> GetEnumerator()

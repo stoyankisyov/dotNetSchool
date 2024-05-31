@@ -1,0 +1,72 @@
+[
+  {
+    "Isbn": "5678901234567",
+    "Title": "The Haunted Manor",
+    "PublicationDate": "2004-05-05",
+    "PublicationDateXml": {
+      "Date": "2004-05-05"
+    },
+    "Authors": [
+      {
+        "FirstName": "Michael",
+        "LastName": "Brown",
+        "BirthDate": "1985-04-04",
+        "BirthDateXml": {
+          "Date": "1985-04-04"
+        }
+      },
+      {
+        "FirstName": "Chris",
+        "LastName": "Davis",
+        "BirthDate": "1975-05-05",
+        "BirthDateXml": {
+          "Date": "1975-05-05"
+        }
+      }
+    ]
+  },
+  {
+    "Isbn": "6789012345678",
+    "Title": "Quest for the Hidden Treasure",
+    "PublicationDate": "2005-06-06",
+    "PublicationDateXml": {
+      "Date": "2005-06-06"
+    },
+    "Authors": [
+      {
+        "FirstName": "Michael",
+        "LastName": "Brown",
+        "BirthDate": "1985-04-04",
+        "BirthDateXml": {
+          "Date": "1985-04-04"
+        }
+      }
+    ]
+  },
+  {
+    "Isbn": "9012345678901",
+    "Title": "Legends of the Forgotten Realm",
+    "PublicationDate": "2008-09-09",
+    "PublicationDateXml": {
+      "Date": "2008-09-09"
+    },
+    "Authors": [
+      {
+        "FirstName": "Jane",
+        "LastName": "Smith",
+        "BirthDate": "1980-02-02",
+        "BirthDateXml": {
+          "Date": "1980-02-02"
+        }
+      },
+      {
+        "FirstName": "Michael",
+        "LastName": "Brown",
+        "BirthDate": "1985-04-04",
+        "BirthDateXml": {
+          "Date": "1985-04-04"
+        }
+      }
+    ]
+  }
+]

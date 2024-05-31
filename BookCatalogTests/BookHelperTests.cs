@@ -1,4 +1,4 @@
-﻿using BookCatalog;
+﻿using BookCatalog.Core.Helpers;
 
 namespace BookCatalogTests
 {
