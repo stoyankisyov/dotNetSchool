@@ -21,19 +21,15 @@ namespace BookCatalog.Infrastructure.Mappers
         }
 
         public static Models.JsonEntities.Catalog ToEntity(this Core.Models.Catalog domainModel)
-        {
-            return new Models.JsonEntities.Catalog()
+            => new Models.JsonEntities.Catalog()
             {
                 Books = domainModel.Books.ToEntity()
             };
-        }
 
         public static Models.XmlEntities.Catalog ToXmlEntity(this Core.Models.Catalog domainModel)
-        {
-            return new Models.XmlEntities.Catalog()
+            => new Models.XmlEntities.Catalog()
             {
-                Books = domainModel.Books.Select(x => x.Value.ToEntity()).ToList()
+                Books = domainModel.Books.ToXmlEntity()
             };
-        }
     }
 }

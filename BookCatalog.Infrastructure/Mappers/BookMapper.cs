@@ -11,7 +11,9 @@ namespace BookCatalog.Infrastructure.Mappers
             => new Core.Models.Book(entity.Isbn, entity.Title, entity.PublicationDate?.Date, entity.Authors.ToDomainModel());
 
         public static Dictionary<string, Core.Models.Book> ToDomainModel(this Dictionary<string, Models.JsonEntities.Book> entities)
-            => entities.Select(x => (x.Key, x.Value.ToDomainModel()));
+             => entities.ToDictionary(
+                 keyValuePair => keyValuePair.Key,
+                 keyValuePair => keyValuePair.Value.ToDomainModel());
 
         public static IEnumerable<Core.Models.Book> ToDomainModel(this IEnumerable<Models.XmlEntities.Book> entities)
             => entities.Select(x => x.ToDomainModel());
@@ -36,10 +38,12 @@ namespace BookCatalog.Infrastructure.Mappers
             };
         }
 
-        public static IEnumerable<Models.JsonEntities.Book> ToEntity(IEnumerable<Core.Models.Book> domainModels)
-            => domainModels.Select(x => x.ToEntity());
+        public static Dictionary<string, Models.JsonEntities.Book> ToEntity(this Dictionary<string, Core.Models.Book> domainModels)
+            => domainModels.ToDictionary(
+                keyValuePair => keyValuePair.Key,
+                keyValuePair => keyValuePair.Value.ToEntity());
 
-        public static IEnumerable<Models.XmlEntities.Book> ToXmlEntity(IEnumerable<Core.Models.Book> domainModels)
-            => domainModels.Select(x => x.ToXmlEntity());
+        public static List<Models.XmlEntities.Book> ToXmlEntity(this Dictionary<string, Core.Models.Book> domainModels)
+            => domainModels.Select(x => x.Value.ToXmlEntity()).ToList();
     }
 }
