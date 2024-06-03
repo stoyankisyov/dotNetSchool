@@ -14,6 +14,10 @@ namespace BookCatalog.Core.Wrappers
         {
             Date = date;
         }
+        public DateOnlyXmlWrapper(DateOnly? date)
+        {
+            Date = date ?? Date;
+        }
 
         public XmlSchema? GetSchema() => null;
 
