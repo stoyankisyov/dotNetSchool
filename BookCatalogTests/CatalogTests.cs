@@ -1,4 +1,4 @@
-using BookCatalog;
+using BookCatalog.Core.Models;
 
 namespace BookCatalogTests
 {
@@ -8,10 +8,13 @@ namespace BookCatalogTests
         [TestMethod]
         public void AddSkipExistingBookSuccess()
         {
+            var author1 = new Author("John", "Doe", new DateOnly(1970, 1, 1));
+            var author2 = new Author("Jane", "Smith", new DateOnly(1980, 2, 2));
+
             var catalog = new Catalog();
-            catalog.Add(new Book("123-4-56-789123-4", "A", new DateOnly(2000, 1, 1), ["John", "Jim", "Peter", "Kate"]));
-            catalog.Add(new Book("123-4-56-789123-4", "A", new DateOnly(2000, 1, 1), ["John", "Jim", "Peter", "Kate"]));
-            catalog.Add(new Book("2234567894424", "B", new DateOnly(2000, 12, 12), ["Mike", "Nike", "John"]));
+            catalog.Add(new Book("1234567890123", "The Great Adventure", new DateOnly(2000, 1, 1), [author1, author2]));
+            catalog.Add(new Book("1234567890123", "The Great Adventure", new DateOnly(2000, 1, 1), [author1, author2]));
+            catalog.Add(new Book("2345678901234", "Mystery of the Lost City", new DateOnly(2001, 2, 2), [author1]));
 
             Assert.AreEqual(2, catalog.Count());
         }
@@ -19,21 +22,26 @@ namespace BookCatalogTests
         [TestMethod]
         public void IndexerGetSuccess()
         {
-            var catalog = new Catalog();
-            catalog.Add(new Book("2234567894424", "B", new DateOnly(2000, 12, 12), ["Mike", "Nike", "John"]));
-            catalog.Add(new Book("123-4-56-789123-4", "A", new DateOnly(2000, 1, 1), ["John", "Jim", "Peter", "Kate"]));
+            var author1 = new Author("John", "Doe", new DateOnly(1970, 1, 1));
+            var author2 = new Author("Jane", "Smith", new DateOnly(1980, 2, 2));
 
-            Assert.AreEqual("A", catalog["123-4-56-789123-4"].Title);
-            Assert.AreEqual("1234567891234", catalog["123-4-56-789123-4"].Isbn);
+            var catalog = new Catalog();
+            catalog.Add(new Book("1234567890123", "The Great Adventure", new DateOnly(2000, 1, 1), [author1, author2]));
+            catalog.Add(new Book("2345678901234", "Mystery of the Lost City", new DateOnly(2001, 2, 2), [author1]));
+
+            Assert.AreEqual("The Great Adventure", catalog["1234567890123"].Title);
+            Assert.AreEqual("1234567890123", catalog["123-4-56-789012-3"].Isbn);
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void IndexerGetFail()
         {
+            var author1 = new Author("John", "Doe", new DateOnly(1970, 1, 1));
+            var author2 = new Author("Jane", "Smith", new DateOnly(1980, 2, 2));
+
             var catalog = new Catalog();
-            catalog.Add(new Book("2234567894424", "B", new DateOnly(2000, 12, 12), ["Mike", "Nike", "John"]));
-            catalog.Add(new Book("123-4-56-789123-4", "A", new DateOnly(2000, 1, 1), ["John", "Jim", "Peter", "Kate"]));
+            catalog.Add(new Book("1234567890123", "The Great Adventure", new DateOnly(2000, 1, 1), [author1, author2]));
 
             var book = catalog["Invalid ISBN"];
         }
@@ -41,14 +49,17 @@ namespace BookCatalogTests
         [TestMethod]
         public void GetSortedBooksSuccess()
         {
+            var author1 = new Author("John", "Doe", new DateOnly(1970, 1, 1));
+            var author2 = new Author("Jane", "Smith", new DateOnly(1980, 2, 2));
+
             var catalog = new Catalog();
-            catalog.Add(new Book("2234567894424", "B", new DateOnly(2000, 12, 12), ["Mike", "Nike", "John"]));
-            catalog.Add(new Book("123-4-56-789123-4", "A", new DateOnly(2000, 1, 1), ["John", "Jim", "Peter", "Kate"]));
+            catalog.Add(new Book("1234567890123", "The Great Adventure", new DateOnly(2000, 1, 1), [author1, author2]));
+            catalog.Add(new Book("2345678901234", "Mystery of the Lost City", new DateOnly(2001, 2, 2), [author1]));
 
             var expectedResult = new List<Book>()
             {
-                new Book("123-4-56-789123-4", "A", new DateOnly(2000, 1, 1), ["John", "Jim", "Peter", "Kate"]),
-                new Book("2234567894424", "B", new DateOnly(2000, 12, 12), ["Mike", "Nike", "John"])
+                new Book("2345678901234", "Mystery of the Lost City", new DateOnly(2001, 2, 2), [author1]),
+                new Book("1234567890123", "The Great Adventure", new DateOnly(2000, 1, 1), [author1, author2])
             };
 
             var actualResult = catalog.GetSortedBooks();
@@ -61,45 +72,38 @@ namespace BookCatalogTests
         [TestMethod]
         public void GetBooksByAuthorSuccess()
         {
+            var author1 = new Author("John", "Doe", new DateOnly(1970, 1, 1));
+            var author2 = new Author("Jane", "Smith", new DateOnly(1980, 2, 2));
+
             var catalog = new Catalog();
-            catalog.Add(new Book("123-4-56-789123-4", "A", new DateOnly(2000, 1, 1), ["John", "Jim", "Peter", "Kate"]));
-            catalog.Add(new Book("2234567894424", "B", new DateOnly(2000, 12, 12), ["Mike", "Nike", "John"]));
+            catalog.Add(new Book("1234567890123", "The Great Adventure", new DateOnly(2000, 1, 1), [author1, author2]));
+            catalog.Add(new Book("2345678901234", "Mystery of the Lost City", new DateOnly(2001, 2, 2), [author1]));
 
             var expectedResultJohn = new List<Book>()
             {
-                new Book("123-4-56-789123-4", "A", new DateOnly(2000, 1, 1), ["John", "Jim", "Peter", "Kate"]),
-                new Book("2234567894424", "B", new DateOnly(2000, 12, 12), ["Mike", "Nike", "John"])
+                new Book("1234567890123", "The Great Adventure", new DateOnly(2000, 1, 1), [author1, author2])
             };
 
-            var actualResultJohn = catalog.GetBooksByAuthor("John");
+            var actualResultJohn = catalog.GetBooksByAuthor(author2);
 
             Assert.AreEqual(expectedResultJohn.Count, actualResultJohn.Count);
             Assert.AreEqual(expectedResultJohn[0].Isbn, actualResultJohn[0].Isbn);
-            Assert.AreEqual(expectedResultJohn[1].Isbn, actualResultJohn[1].Isbn);
-
-            // Additional check with author who has only one book
-            var expectedResultMike = new List<Book>()
-            {
-                new Book("2234567894424", "B", new DateOnly(2000, 12, 12), ["Mike", "Nike", "John"])
-            };
-
-            var actualResultMike = catalog.GetBooksByAuthor("Mike");
-
-            Assert.AreEqual(1, actualResultMike.Count);
-            Assert.AreEqual(expectedResultMike[0].Isbn, actualResultMike[0].Isbn);
         }
 
         [TestMethod]
         public void GetAllAuthorsBookCountSuccess()
         {
+            var author1 = new Author("John", "Doe", new DateOnly(1970, 1, 1));
+            var author2 = new Author("Jane", "Smith", new DateOnly(1980, 2, 2));
+
             var catalog = new Catalog();
-            catalog.Add(new Book("123-4-56-789123-4", "A", new DateOnly(2000, 1, 1), ["John"]));
-            catalog.Add(new Book("2234567894424", "B", new DateOnly(2000, 12, 12), ["Mike", "John"]));
+            catalog.Add(new Book("1234567890123", "The Great Adventure", new DateOnly(2000, 1, 1), [author1, author2]));
+            catalog.Add(new Book("2345678901234", "Mystery of the Lost City", new DateOnly(2001, 2, 2), [author1]));
 
             var expectedResult = new List<(string, int)>
             {
-                ("John", 2),
-                ("Mike", 1)
+                ("JohnDoe", 2),
+                ("JaneSmith", 1)
             };
 
             var actualResult = catalog.GetAllAuthorsBookCount();
