@@ -1,23 +1,12 @@
 ﻿using System.Collections;
-using System.Xml.Serialization;
 using BookCatalog.Core.Helpers;
 
 namespace BookCatalog.Core.Models
 {
-    [XmlRoot("Catalog")]
     public class Catalog : IEnumerable<Book>
     {
-        [XmlIgnore]
         public Dictionary<string, Book> Books { get; private set; }
-
-        [XmlArray("Books")]
-        [XmlArrayItem("Book")]
-        public List<Book> BookList
-        {
-            get => [.. Books.Values];
-            set => Books = value.ToDictionary(book => BookHelper.UnifyIsbn(book.Isbn));
-        }
-
+        
         public Catalog()
         {
             Books = [];

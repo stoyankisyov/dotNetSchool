@@ -1,8 +1,5 @@
 ﻿#nullable disable
 
-using BookCatalog.Core.Wrappers;
-using System.Xml.Serialization;
-
 namespace BookCatalog.Core.Models
 {
     public class Author
@@ -11,7 +8,7 @@ namespace BookCatalog.Core.Models
         private string _firstName;
         private string _lastName;
 
-        [XmlElement("FirstName")]
+        public DateOnly BirthDate { get; set; }
         public string FirstName
         {
             get => _firstName;
@@ -26,7 +23,6 @@ namespace BookCatalog.Core.Models
             }
         }
 
-        [XmlElement("LastName")]
         public string LastName
         {
             get => _lastName;
@@ -41,18 +37,6 @@ namespace BookCatalog.Core.Models
             }
         }
 
-        [XmlIgnore]
-        public DateOnly BirthDate { get; set; }
-
-        [XmlElement("BirthDate")]
-        public DateOnlyXmlWrapper BirthDateXml
-        {
-            get => new DateOnlyXmlWrapper(BirthDate);
-            set => BirthDate = value.Date;
-        }
-
-        public Author() { }
-
         public Author(string firstName, string lastName, DateOnly birthDate)
         {
             FirstName = firstName;
@@ -60,8 +44,6 @@ namespace BookCatalog.Core.Models
             BirthDate = birthDate;
         }
 
-        // -> overriden for the JsonRepository logic, upon recieving from xml same authors are different objects /in each book/
-        // which causes problems with saving in the json files /one file - one author -> different author objects/
         public override bool Equals(object obj)     
             => obj is Author other ? FirstName == other.FirstName && LastName == other.LastName && BirthDate == other.BirthDate : false;
 

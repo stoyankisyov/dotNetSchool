@@ -2,6 +2,7 @@
 using BookCatalog.Core.Interfaces;
 using BookCatalog.Core.Models;
 using BookCatalog.Infrastructure.Converters;
+using BookCatalog.Infrastructure.Mappers;
 
 namespace BookCatalog.Infrastructure.Repositories
 {
@@ -11,6 +12,8 @@ namespace BookCatalog.Infrastructure.Repositories
 
         public async Task AddAsync(Catalog catalog)
         {
+            var entity = catalog.ToEntity();
+
             var options = new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true,
@@ -23,22 +26,22 @@ namespace BookCatalog.Infrastructure.Repositories
                 Directory.CreateDirectory(_filesPath);
             }
 
-            foreach (var author in catalog.BookList.SelectMany(book => book.Authors).Distinct())
+            foreach (var author in entity.Books.SelectMany(kvp => kvp.Value.Authors).Distinct())
             {
-                var authorBooks = catalog.BookList.Where(book => book.Authors.Contains(author)).ToList();
-                var authorCatalog = new Catalog();
-                authorCatalog.AddRange(authorBooks);
+                var authorCatalog = new Models.JsonEntities.Catalog();
+                authorCatalog.Books = entity.Books.Where(kvp => kvp.Value.Authors.Any(x => x.FirstName == author.FirstName && x.LastName == author.LastName && x.BirthDate == author.BirthDate)).ToDictionary();
 
                 var authorJsonPath = Path.Combine(_filesPath, $"{author.FirstName}_{author.LastName}.json");
-                var serializedAuthorCatalog = JsonSerializer.Serialize(authorCatalog.BookList, options);
-                
+                var serializedAuthorCatalog = JsonSerializer.Serialize(authorCatalog.Books, options);
+
                 await File.WriteAllTextAsync(authorJsonPath, serializedAuthorCatalog);
             }
         }
 
         public async Task<Catalog> GetAsync()
         {
-            var restoredCatalog = new Catalog();
+            var entityCatalog = new Models.JsonEntities.Catalog();
+
             var options = new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true,
@@ -50,14 +53,21 @@ namespace BookCatalog.Infrastructure.Repositories
             foreach (var jsonFile in jsonFiles)
             {
                 var fileContent = await File.ReadAllTextAsync(jsonFile);
-                var books = JsonSerializer.Deserialize<List<Book>>(fileContent, options);
+                var books = JsonSerializer.Deserialize<Dictionary<string, Models.JsonEntities.Book>>(fileContent, options);
+
                 if (books != null)
                 {
-                    restoredCatalog.AddRange(books);
+                    foreach (var book in books)
+                    {
+                        if (!entityCatalog.Books.ContainsKey(book.Key))
+                        {
+                            entityCatalog.Books.Add(book.Key, book.Value);
+                        }
+                    }
                 }
             }
 
-            return restoredCatalog;
+            return entityCatalog.ToDomainModel();
         }
     }
 }

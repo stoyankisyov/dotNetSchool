@@ -2,7 +2,7 @@
 using System.Xml.Schema;
 using System.Xml.Serialization;
 
-namespace BookCatalog.Core.Wrappers
+namespace BookCatalog.Infrastructure.Wrappers
 {
     public class DateOnlyXmlWrapper : IXmlSerializable
     {
@@ -14,6 +14,7 @@ namespace BookCatalog.Core.Wrappers
         {
             Date = date;
         }
+
         public DateOnlyXmlWrapper(DateOnly? date)
         {
             Date = date ?? Date;

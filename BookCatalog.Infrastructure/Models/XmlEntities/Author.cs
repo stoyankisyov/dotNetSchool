@@ -1,6 +1,6 @@
 ﻿#nullable disable
 
-using BookCatalog.Core.Wrappers;
+using BookCatalog.Infrastructure.Wrappers;
 using System.Xml.Serialization;
 
 namespace BookCatalog.Infrastructure.Models.XmlEntities

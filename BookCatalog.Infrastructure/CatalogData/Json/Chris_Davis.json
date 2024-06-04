@@ -1,72 +1,48 @@
-[
-  {
+{
+  "5678901234567": {
     "Isbn": "5678901234567",
     "Title": "The Haunted Manor",
     "PublicationDate": "2004-05-05",
-    "PublicationDateXml": {
-      "Date": "2004-05-05"
-    },
     "Authors": [
       {
         "FirstName": "Michael",
         "LastName": "Brown",
-        "BirthDate": "1985-04-04",
-        "BirthDateXml": {
-          "Date": "1985-04-04"
-        }
+        "BirthDate": "1985-04-04"
       },
       {
         "FirstName": "Chris",
         "LastName": "Davis",
-        "BirthDate": "1975-05-05",
-        "BirthDateXml": {
-          "Date": "1975-05-05"
-        }
+        "BirthDate": "1975-05-05"
       }
     ]
   },
-  {
+  "7890123456789": {
     "Isbn": "7890123456789",
     "Title": "The Time Traveler\u0027s Diary",
     "PublicationDate": "2006-07-07",
-    "PublicationDateXml": {
-      "Date": "2006-07-07"
-    },
     "Authors": [
       {
         "FirstName": "Chris",
         "LastName": "Davis",
-        "BirthDate": "1975-05-05",
-        "BirthDateXml": {
-          "Date": "1975-05-05"
-        }
+        "BirthDate": "1975-05-05"
       }
     ]
   },
-  {
+  "0123456789012": {
     "Isbn": "0123456789012",
     "Title": "Echoes of the Past",
     "PublicationDate": "2009-10-10",
-    "PublicationDateXml": {
-      "Date": "2009-10-10"
-    },
     "Authors": [
       {
         "FirstName": "John",
         "LastName": "Doe",
-        "BirthDate": "1970-01-01",
-        "BirthDateXml": {
-          "Date": "1970-01-01"
-        }
+        "BirthDate": "1970-01-01"
       },
       {
         "FirstName": "Chris",
         "LastName": "Davis",
-        "BirthDate": "1975-05-05",
-        "BirthDateXml": {
-          "Date": "1975-05-05"
-        }
+        "BirthDate": "1975-05-05"
       }
     ]
   }
-]
+}

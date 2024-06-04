@@ -1,6 +1,6 @@
 ﻿#nullable disable
 
-using BookCatalog.Core.Wrappers;
+using BookCatalog.Infrastructure.Wrappers;
 using System.Xml.Serialization;
 
 namespace BookCatalog.Infrastructure.Models.XmlEntities
@@ -19,7 +19,5 @@ namespace BookCatalog.Infrastructure.Models.XmlEntities
 
         [XmlElement("PublicationDate")]
         public DateOnlyXmlWrapper PublicationDate { get; set; }
-
-        public Book() { }
     }
 }

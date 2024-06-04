@@ -1,6 +1,7 @@
 ﻿using System.Xml.Serialization;
 using BookCatalog.Core.Interfaces;
 using BookCatalog.Core.Models;
+using BookCatalog.Infrastructure.Mappers;
 
 namespace BookCatalog.Infrastructure.Repositories
 {
@@ -10,12 +11,12 @@ namespace BookCatalog.Infrastructure.Repositories
 
         public async Task AddAsync(Catalog catalog)
         {
-            var serializer = new XmlSerializer(typeof(Catalog));
+            var serializer = new XmlSerializer(typeof(Models.XmlEntities.Catalog));
 
             await using (var stream = new FileStream(_filePath, FileMode.Create, FileAccess.Write, FileShare.None))
             await using (var writer = new StreamWriter(stream))
             {
-                serializer.Serialize(writer, catalog);
+                serializer.Serialize(writer, catalog.ToXmlEntity());
                 await writer.FlushAsync();
             }
         }
@@ -27,19 +28,19 @@ namespace BookCatalog.Infrastructure.Repositories
                 throw new FileNotFoundException($"The file at {_filePath} does not exist.");
             }
 
-            var serializer = new XmlSerializer(typeof(Catalog));
+            var serializer = new XmlSerializer(typeof(Models.XmlEntities.Catalog));
 
             await using (var stream = new FileStream(_filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
             using (var reader = new StreamReader(stream))
             {
-                var catalog = (Catalog?)serializer.Deserialize(reader);
+                var catalog = (Models.XmlEntities.Catalog?)serializer.Deserialize(reader);
 
                 if (catalog is null)
                 {
                     throw new InvalidOperationException("Deserialization returned null.");
                 }
 
-                return catalog;
+                return catalog.ToDomainModel();
             }
         }
     }

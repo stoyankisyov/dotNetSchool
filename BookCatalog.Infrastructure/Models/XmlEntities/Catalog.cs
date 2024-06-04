@@ -4,6 +4,7 @@ using System.Xml.Serialization;
 
 namespace BookCatalog.Infrastructure.Models.XmlEntities
 {
+    [XmlRoot("Catalog")]
     public class Catalog
     {
         [XmlArray("Books")]
