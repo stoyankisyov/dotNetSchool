@@ -6,6 +6,6 @@ namespace BookCatalog.Infrastructure.Models.JsonEntities
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public DateOnly BirthDate { get; set; }
+        public DateOnly? BirthDate { get; set; }
     }
 }

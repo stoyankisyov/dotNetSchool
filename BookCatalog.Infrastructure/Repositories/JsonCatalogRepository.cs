@@ -6,11 +6,11 @@ using BookCatalog.Infrastructure.Mappers;
 
 namespace BookCatalog.Infrastructure.Repositories
 {
-    public class JsonCatalogRepository : IGenericRepository<Catalog>
+    public class JsonCatalogRepository : IGenericRepository<Catalog<Book>>
     {
         private const string _filesPath = "../../../../BookCatalog.Infrastructure/CatalogData/Json/";
 
-        public async Task AddAsync(Catalog catalog)
+        public async Task AddAsync(Catalog<Book> catalog)
         {
             var entity = catalog.ToEntity();
 
@@ -37,37 +37,6 @@ namespace BookCatalog.Infrastructure.Repositories
                 await File.WriteAllTextAsync(authorJsonPath, serializedAuthorCatalog);
             }
         }
-
-        public async Task<Catalog> GetAsync()
-        {
-            var entityCatalog = new Models.JsonEntities.Catalog();
-
-            var options = new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true,
-                Converters = { new JsonDateOnlyConverter() }
-            };
-
-            var jsonFiles = Directory.GetFiles(_filesPath, "*.json");
-
-            foreach (var jsonFile in jsonFiles)
-            {
-                var fileContent = await File.ReadAllTextAsync(jsonFile);
-                var books = JsonSerializer.Deserialize<Dictionary<string, Models.JsonEntities.Book>>(fileContent, options);
-
-                if (books != null)
-                {
-                    foreach (var book in books)
-                    {
-                        if (!entityCatalog.Books.ContainsKey(book.Key))
-                        {
-                            entityCatalog.Books.Add(book.Key, book.Value);
-                        }
-                    }
-                }
-            }
-
-            return entityCatalog.ToDomainModel();
-        }
     }
 }
+

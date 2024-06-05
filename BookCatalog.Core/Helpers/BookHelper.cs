@@ -8,7 +8,7 @@ namespace BookCatalog.Core.Helpers
 
         public static string UnifyIsbn(string isbn)
         {
-            return isbn.Replace("-", "");
+            return IsIsbnInCorrectFormat(isbn) ? isbn.Replace("-", "") : throw new ArgumentException("Invalid Isbn");
         }
 
         public static bool IsIsbnInCorrectFormat(string isbn)

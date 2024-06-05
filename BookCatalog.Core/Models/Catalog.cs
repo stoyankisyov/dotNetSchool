@@ -3,26 +3,24 @@ using BookCatalog.Core.Helpers;
 
 namespace BookCatalog.Core.Models
 {
-    public class Catalog : IEnumerable<Book>
+    public class Catalog<T> : IEnumerable<T> where T : Book
     {
-        public Dictionary<string, Book> Books { get; private set; }
+        public Dictionary<string, T> Books { get; private set; }
         
         public Catalog()
         {
             Books = [];
         }
 
-        public void Add(Book book)
+        public void Add(T book)
         {
-            var unifiedIsbn = BookHelper.UnifyIsbn(book.Isbn);
-
-            if (!Books.ContainsKey(unifiedIsbn))
+            if (!Books.ContainsKey(book.Id))
             {
-                Books.Add(unifiedIsbn, book);
+                Books.Add(book.Id, book);
             }
         }
 
-        public void AddRange(IEnumerable<Book> books)
+        public void AddRange(IEnumerable<T> books)
         {
             foreach (var book in books)
             {
@@ -35,7 +33,7 @@ namespace BookCatalog.Core.Models
             get => !BookHelper.IsIsbnInCorrectFormat(isbn) ? throw new ArgumentException("Invalid ISBN format.") : Books[BookHelper.UnifyIsbn(isbn)];
         }
 
-        public IEnumerator<Book> GetEnumerator()
+        public IEnumerator<T> GetEnumerator()
             => Books.Values.GetEnumerator();
 
         IEnumerator IEnumerable.GetEnumerator()
@@ -45,8 +43,7 @@ namespace BookCatalog.Core.Models
             => [.. Books.Values.OrderBy(x => x.Title)];
 
         public List<Book> GetBooksByAuthor(Author author)
-            => [.. Books.Values.Where(x => x.Authors.Any(a => a.FirstName.Equals(author.FirstName) && a.LastName.Equals(author.LastName)))
-                               .OrderBy(x => x.PublicationDate)];
+            => [.. Books.Values.Where(x => x.Authors.Any(a => a.FirstName.Equals(author.FirstName) && a.LastName.Equals(author.LastName)))];
 
         public List<(string, int)> GetAllAuthorsBookCount()
             => [.. Books.Values.SelectMany(book => book.Authors)

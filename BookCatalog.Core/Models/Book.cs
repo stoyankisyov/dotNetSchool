@@ -1,16 +1,13 @@
 ﻿#nullable disable
 
-using BookCatalog.Core.Helpers;
-
 namespace BookCatalog.Core.Models
 {
-    public class Book
+    public abstract class Book
     {
         private string _title;
 
-        public string Isbn { get; set; }
-        public DateOnly? PublicationDate { get; set; }
-        public HashSet<Author> Authors { get; set; }
+        public string Id { get; set; }  // -> Url for Ebook, first isbn from the list for PaperBook
+        public HashSet<Author> Authors { get; }
         public string Title
         {
             get => _title;
@@ -25,16 +22,10 @@ namespace BookCatalog.Core.Models
             }
         }
 
-        public Book(string isbn, string title, DateOnly? publicationDate, HashSet<Author> authors)
+        protected Book(string id, string title, HashSet<Author> authors)
         {
-            if (!BookHelper.IsIsbnInCorrectFormat(isbn))
-            {
-                throw new ArgumentException("Invalid ISBN format.");
-            }
-
-            Isbn = BookHelper.UnifyIsbn(isbn);
+            Id = id;
             Title = title;
-            PublicationDate = publicationDate;
             Authors = authors;
         }
     }

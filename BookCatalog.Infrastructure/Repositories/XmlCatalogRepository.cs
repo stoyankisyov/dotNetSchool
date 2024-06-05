@@ -5,11 +5,11 @@ using BookCatalog.Infrastructure.Mappers;
 
 namespace BookCatalog.Infrastructure.Repositories
 {
-    public class XmlCatalogRepository : IGenericRepository<Catalog>
+    public class XmlCatalogRepository : IGenericRepository<Catalog<Book>>
     {
         private const string _filePath = "../../../../BookCatalog.Infrastructure/CatalogData/Xml/XmlCatalogData.xml";
 
-        public async Task AddAsync(Catalog catalog)
+        public async Task AddAsync(Catalog<Book> catalog)
         {
             var serializer = new XmlSerializer(typeof(Models.XmlEntities.Catalog));
 
@@ -18,29 +18,6 @@ namespace BookCatalog.Infrastructure.Repositories
             {
                 serializer.Serialize(writer, catalog.ToXmlEntity());
                 await writer.FlushAsync();
-            }
-        }
-
-        public async Task<Catalog> GetAsync()
-        {
-            if (!File.Exists(_filePath))
-            {
-                throw new FileNotFoundException($"The file at {_filePath} does not exist.");
-            }
-
-            var serializer = new XmlSerializer(typeof(Models.XmlEntities.Catalog));
-
-            await using (var stream = new FileStream(_filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
-            using (var reader = new StreamReader(stream))
-            {
-                var catalog = (Models.XmlEntities.Catalog?)serializer.Deserialize(reader);
-
-                if (catalog is null)
-                {
-                    throw new InvalidOperationException("Deserialization returned null.");
-                }
-
-                return catalog.ToDomainModel();
             }
         }
     }

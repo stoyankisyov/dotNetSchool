@@ -8,7 +8,7 @@ namespace BookCatalog.Core.Models
         private string _firstName;
         private string _lastName;
 
-        public DateOnly BirthDate { get; set; }
+        public DateOnly? BirthDate { get; set; }
         public string FirstName
         {
             get => _firstName;
@@ -37,7 +37,7 @@ namespace BookCatalog.Core.Models
             }
         }
 
-        public Author(string firstName, string lastName, DateOnly birthDate)
+        public Author(string firstName, string lastName, DateOnly? birthDate)
         {
             FirstName = firstName;
             LastName = lastName;
