@@ -22,7 +22,7 @@ namespace BookCatalog.Infrastructure.Repositories
             using (var reader = new StreamReader(_cvsFilePath))
             using (var csv = new CsvReader(reader, csvConfig))
             {
-                csv.Context.RegisterClassMap<BookRecordMap>();
+                csv.Context.RegisterClassMap<BookRecordMapper>();
                 var records = csv.GetRecordsAsync<BookRecord>();
 
                 await foreach (var record in records)
@@ -67,7 +67,7 @@ namespace BookCatalog.Infrastructure.Repositories
             using (var reader = new StreamReader(_cvsFilePath))
             using (var csv = new CsvReader(reader, csvConfig))
             {
-                csv.Context.RegisterClassMap<BookRecordMap>();
+                csv.Context.RegisterClassMap<BookRecordMapper>();
                 var records = csv.GetRecordsAsync<BookRecord>();
 
                 await foreach (var record in records)

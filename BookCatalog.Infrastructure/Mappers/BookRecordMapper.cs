@@ -1,8 +1,8 @@
 ﻿using CsvHelper.Configuration;
 
-public class BookRecordMap : ClassMap<BookRecord>
+public class BookRecordMapper : ClassMap<BookRecord>
 {
-    public BookRecordMap()
+    public BookRecordMapper()
     {
         Map(m => m.Creator).Name("creator");
         Map(m => m.Format).Name("format");
