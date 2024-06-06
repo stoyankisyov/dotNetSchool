@@ -1,0 +1,23 @@
+{
+  "animalfarm0000wald": {
+    "Id": "animalfarm0000wald",
+    "Title": "Animal farm",
+    "Authors": [
+      {
+        "FirstName": "Waldron",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Carmel",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "author",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

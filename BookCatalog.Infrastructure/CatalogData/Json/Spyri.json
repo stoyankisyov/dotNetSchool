@@ -1,0 +1,121 @@
+{
+  "heidispryi00spyr": {
+    "Id": "heidispryi00spyr",
+    "Title": "Heidi",
+    "Authors": [
+      {
+        "FirstName": "Spyri",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Johanna",
+        "LastName": "",
+        "BirthDate": "1827-01-01"
+      },
+      {
+        "FirstName": "Velasquez",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Eric",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Harden",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Laurie",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "heidi100spyr": {
+    "Id": "heidi100spyr",
+    "Title": "Heidi",
+    "Authors": [
+      {
+        "FirstName": "Spyri",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Johanna",
+        "LastName": "",
+        "BirthDate": "1827-01-01"
+      },
+      {
+        "FirstName": "Smith",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Jessie",
+        "LastName": "Willcox",
+        "BirthDate": "1863-01-01"
+      },
+      {
+        "FirstName": "ill",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "heidichildofmoun00spyr": {
+    "Id": "heidichildofmoun00spyr",
+    "Title": "Heidi, child of the mountains : adapted and abridged from the famous story",
+    "Authors": [
+      {
+        "FirstName": "Spyri",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Johanna",
+        "LastName": "",
+        "BirthDate": "1827-01-01"
+      },
+      {
+        "FirstName": "Lerch",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Steffie",
+        "LastName": "E.",
+        "BirthDate": "1908-01-01"
+      }
+    ]
+  },
+  "heidiadaptedfrom00spyr": {
+    "Id": "heidiadaptedfrom00spyr",
+    "Title": "Heidi adapted from the original story",
+    "Authors": [
+      {
+        "FirstName": "Spyri",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Johanna",
+        "LastName": "",
+        "BirthDate": "1827-01-01"
+      },
+      {
+        "FirstName": "Malvern",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Corinne",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

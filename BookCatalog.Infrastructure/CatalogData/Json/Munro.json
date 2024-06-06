@@ -1,0 +1,33 @@
+{
+  "londonshakespear05shak": {
+    "Id": "londonshakespear05shak",
+    "Title": "The London Shakespeare; a new annotated and critical edition of the complete works in six volumes",
+    "Authors": [
+      {
+        "FirstName": "Shakespeare",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "William",
+        "LastName": "",
+        "BirthDate": "1564-01-01"
+      },
+      {
+        "FirstName": "Munro",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "John",
+        "LastName": "James",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "ed",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

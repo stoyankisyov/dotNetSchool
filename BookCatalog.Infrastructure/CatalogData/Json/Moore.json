@@ -1,0 +1,60 @@
+{
+  "006116111X": {
+    "Id": "006116111X",
+    "Title": "Lamb : the Gospel according to Biff, Christ\u0027s childhood pal",
+    "Authors": [
+      {
+        "FirstName": "Moore",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Christopher",
+        "LastName": "",
+        "BirthDate": "1957-01-01"
+      }
+    ]
+  },
+  "0061770205": {
+    "Id": "0061770205",
+    "Title": "Fool",
+    "Authors": [
+      {
+        "FirstName": "Moore",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Christopher",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "1299260756": {
+    "Id": "1299260756",
+    "Title": "Daisy Miller",
+    "Authors": [
+      {
+        "FirstName": "James",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Henry",
+        "LastName": "",
+        "BirthDate": "1843-01-01"
+      },
+      {
+        "FirstName": "Moore",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Geoffrey",
+        "LastName": "",
+        "BirthDate": "1920-01-01"
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "0747557497": {
+    "Id": "0747557497",
+    "Title": "Love that dog",
+    "Authors": [
+      {
+        "FirstName": "Sharon",
+        "LastName": "Creech",
+        "BirthDate": null
+      }
+    ]
+  },
+  "074757197X": {
+    "Id": "074757197X",
+    "Title": "Granny Torrelli Makes Soup",
+    "Authors": [
+      {
+        "FirstName": "Sharon",
+        "LastName": "Creech",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0747598940": {
+    "Id": "0747598940",
+    "Title": "Heartbeat",
+    "Authors": [
+      {
+        "FirstName": "Sharon",
+        "LastName": "Creech",
+        "BirthDate": null
+      }
+    ]
+  }
+}

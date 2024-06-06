@@ -1,0 +1,18 @@
+{
+  "andbandplayedon0000ward": {
+    "Id": "andbandplayedon0000ward",
+    "Title": "And the band played on",
+    "Authors": [
+      {
+        "FirstName": "Ward",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Christopher",
+        "LastName": "",
+        "BirthDate": "1942-01-01"
+      }
+    ]
+  }
+}

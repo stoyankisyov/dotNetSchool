@@ -1,0 +1,141 @@
+{
+  "tragediesiiromeo00shak": {
+    "Id": "tragediesiiromeo00shak",
+    "Title": "Tragedies II: Romeo and Juliet, Othello, King Lear. With biographical illus. and pictures of the setting of the plays",
+    "Authors": [
+      {
+        "FirstName": "Shakespeare",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "William",
+        "LastName": "",
+        "BirthDate": "1564-01-01"
+      },
+      {
+        "FirstName": "Masefield",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "John",
+        "LastName": "",
+        "BirthDate": "1878-01-01"
+      },
+      {
+        "FirstName": "ed",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "threetragediesju00shak": {
+    "Id": "threetragediesju00shak",
+    "Title": "Three tragedies: Julius Caesar, Hamlet, Macbeth",
+    "Authors": [
+      {
+        "FirstName": "Shakespeare",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "William",
+        "LastName": "",
+        "BirthDate": "1564-01-01"
+      },
+      {
+        "FirstName": "Masefield",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "John",
+        "LastName": "",
+        "BirthDate": "1878-01-01"
+      },
+      {
+        "FirstName": "ed",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "kinghenryivparti00shak": {
+    "Id": "kinghenryivparti00shak",
+    "Title": "King Henry IV, part I. Twelfth night. Tragedy of King Lear. The tempest",
+    "Authors": [
+      {
+        "FirstName": "Shakespeare",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "William",
+        "LastName": "",
+        "BirthDate": "1564-01-01"
+      },
+      {
+        "FirstName": "Parrott",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Thomas",
+        "LastName": "Marc",
+        "BirthDate": "1866-01-01"
+      },
+      {
+        "FirstName": "ed",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Telfer",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Robert",
+        "LastName": "Stockdale",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "ed",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "londonshakespear05shak": {
+    "Id": "londonshakespear05shak",
+    "Title": "The London Shakespeare; a new annotated and critical edition of the complete works in six volumes",
+    "Authors": [
+      {
+        "FirstName": "Shakespeare",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "William",
+        "LastName": "",
+        "BirthDate": "1564-01-01"
+      },
+      {
+        "FirstName": "Munro",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "John",
+        "LastName": "James",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "ed",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "0808594184": {
+    "Id": "0808594184",
+    "Title": "Everybody needs a rock",
+    "Authors": [
+      {
+        "FirstName": "Baylor",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Byrd",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Parnall",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Peter",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "ill",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0440842581": {
+    "Id": "0440842581",
+    "Title": "Annie and the Old One",
+    "Authors": [
+      {
+        "FirstName": "Miles",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Miska",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Parnall",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Peter",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "ill",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0805086773": {
+    "Id": "0805086773",
+    "Title": "Hondo \u0026 Fabian",
+    "Authors": [
+      {
+        "FirstName": "McCarty",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Peter",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0751372013": {
+    "Id": "0751372013",
+    "Title": "Book",
+    "Authors": [
+      {
+        "FirstName": "Lyon",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "George",
+        "LastName": "Ella",
+        "BirthDate": "1949-01-01"
+      },
+      {
+        "FirstName": "Catalanotto",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Peter",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "ill",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

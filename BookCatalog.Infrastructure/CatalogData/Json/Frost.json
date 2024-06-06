@@ -1,0 +1,34 @@
+{
+  "0786276975": {
+    "Id": "0786276975",
+    "Title": "Keesha\u0027s house",
+    "Authors": [
+      {
+        "FirstName": "Frost",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Helen",
+        "LastName": "",
+        "BirthDate": "1949-01-01"
+      }
+    ]
+  },
+  "0312603835": {
+    "Id": "0312603835",
+    "Title": "Diamond Willow",
+    "Authors": [
+      {
+        "FirstName": "Frost",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Helen",
+        "LastName": "",
+        "BirthDate": "1949-01-01"
+      }
+    ]
+  }
+}

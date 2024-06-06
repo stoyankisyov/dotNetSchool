@@ -1,0 +1,48 @@
+{
+  "4classicamerica000hawt": {
+    "Id": "4classicamerica000hawt",
+    "Title": "4 classic American novels",
+    "Authors": [
+      {
+        "FirstName": "Hawthorne",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Nathaniel",
+        "LastName": "",
+        "BirthDate": "1804-01-01"
+      },
+      {
+        "FirstName": "Twain",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Mark",
+        "LastName": "",
+        "BirthDate": "1835-01-01"
+      },
+      {
+        "FirstName": "Crane",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Stephen",
+        "LastName": "",
+        "BirthDate": "1871-01-01"
+      },
+      {
+        "FirstName": "Melville",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Herman",
+        "LastName": "",
+        "BirthDate": "1819-01-01"
+      }
+    ]
+  }
+}

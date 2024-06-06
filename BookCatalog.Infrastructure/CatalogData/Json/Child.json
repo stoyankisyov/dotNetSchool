@@ -1,0 +1,38 @@
+{
+  "ASPC0005031600": {
+    "Id": "ASPC0005031600",
+    "Title": "Incidents in the life of a slave girl.",
+    "Authors": [
+      {
+        "FirstName": "Jacobs",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Harriet",
+        "LastName": "Ann)",
+        "BirthDate": "1813-01-01"
+      },
+      {
+        "FirstName": "Child",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Lydia",
+        "LastName": "Francis",
+        "BirthDate": "1802-01-01"
+      },
+      {
+        "FirstName": "Brent",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Linda",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "0375823840": {
+    "Id": "0375823840",
+    "Title": "Animal sense",
+    "Authors": [
+      {
+        "FirstName": "Ackerman",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Diane",
+        "LastName": "",
+        "BirthDate": "1948-01-01"
+      },
+      {
+        "FirstName": "S\u00EDs",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Peter",
+        "LastName": "",
+        "BirthDate": "1949-01-01"
+      }
+    ]
+  }
+}

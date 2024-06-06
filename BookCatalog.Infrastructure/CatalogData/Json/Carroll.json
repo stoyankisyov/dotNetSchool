@@ -1,0 +1,18 @@
+{
+  "aliceinwonderlan00lewi_7": {
+    "Id": "aliceinwonderlan00lewi_7",
+    "Title": "Alice in Wonderland",
+    "Authors": [
+      {
+        "FirstName": "Carroll",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Lewis",
+        "LastName": "",
+        "BirthDate": "1832-01-01"
+      }
+    ]
+  }
+}

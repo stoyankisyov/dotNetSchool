@@ -1,0 +1,65 @@
+{
+  "1606867296": {
+    "Id": "1606867296",
+    "Title": "If you come softly",
+    "Authors": [
+      {
+        "FirstName": "Woodson",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Jacqueline",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0439808103": {
+    "Id": "0439808103",
+    "Title": "Coming on home soon",
+    "Authors": [
+      {
+        "FirstName": "Woodson",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Jacqueline",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Lewis",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Earl",
+        "LastName": "B.",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "ill",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "1101157267": {
+    "Id": "1101157267",
+    "Title": "Hush",
+    "Authors": [
+      {
+        "FirstName": "Woodson",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Jacqueline",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

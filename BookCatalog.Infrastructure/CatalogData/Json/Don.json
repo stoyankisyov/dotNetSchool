@@ -1,0 +1,34 @@
+{
+  "0547349041": {
+    "Id": "0547349041",
+    "Title": "Dolley Madison saves George Washington",
+    "Authors": [
+      {
+        "FirstName": "Brown",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Don",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0142417351": {
+    "Id": "0142417351",
+    "Title": "Corduroy",
+    "Authors": [
+      {
+        "FirstName": "Freeman",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Don",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

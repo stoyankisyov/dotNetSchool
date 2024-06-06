@@ -1,0 +1,58 @@
+{
+  "0395073529": {
+    "Id": "0395073529",
+    "Title": "Fantastic voyage",
+    "Authors": [
+      {
+        "FirstName": "Asimov",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Isaac",
+        "LastName": "",
+        "BirthDate": "1920-01-01"
+      },
+      {
+        "FirstName": "Kleiner",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Harry",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Duncan",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "David",
+        "LastName": "",
+        "BirthDate": "1913-01-01"
+      },
+      {
+        "FirstName": "Klement",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Otto",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Bixby",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Jerome",
+        "LastName": "",
+        "BirthDate": "1923-01-01"
+      }
+    ]
+  }
+}

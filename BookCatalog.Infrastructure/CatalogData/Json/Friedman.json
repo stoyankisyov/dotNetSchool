@@ -1,0 +1,44 @@
+{
+  "080859060X": {
+    "Id": "080859060X",
+    "Title": "How my parents learned to eat",
+    "Authors": [
+      {
+        "FirstName": "Friedman",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Ina",
+        "LastName": "R",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Say",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Allen",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0329602969": {
+    "Id": "0329602969",
+    "Title": "Children of the Wild West",
+    "Authors": [
+      {
+        "FirstName": "Friedman",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Russell",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

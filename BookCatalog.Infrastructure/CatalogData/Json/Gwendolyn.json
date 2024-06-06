@@ -1,0 +1,50 @@
+{
+  "maudmartha00broo": {
+    "Id": "maudmartha00broo",
+    "Title": "Maud Martha",
+    "Authors": [
+      {
+        "FirstName": "Brooks",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Gwendolyn",
+        "LastName": "",
+        "BirthDate": "1917-01-01"
+      }
+    ]
+  },
+  "bronzevilleboys100broo": {
+    "Id": "bronzevilleboys100broo",
+    "Title": "Bronzeville boys and girls",
+    "Authors": [
+      {
+        "FirstName": "Brooks",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Gwendolyn",
+        "LastName": "",
+        "BirthDate": "1917-01-01"
+      }
+    ]
+  },
+  "selectedpoems000broo": {
+    "Id": "selectedpoems000broo",
+    "Title": "Selected poems",
+    "Authors": [
+      {
+        "FirstName": "Brooks",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Gwendolyn",
+        "LastName": "",
+        "BirthDate": "1917-01-01"
+      }
+    ]
+  }
+}

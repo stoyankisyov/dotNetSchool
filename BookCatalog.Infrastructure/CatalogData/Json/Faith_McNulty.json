@@ -1,0 +1,24 @@
+{
+  "0545000858": {
+    "Id": "0545000858",
+    "Title": "If you decide to go to the moon",
+    "Authors": [
+      {
+        "FirstName": "Faith",
+        "LastName": "McNulty",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0439060168": {
+    "Id": "0439060168",
+    "Title": "How whales walked into the sea",
+    "Authors": [
+      {
+        "FirstName": "Faith",
+        "LastName": "McNulty",
+        "BirthDate": null
+      }
+    ]
+  }
+}

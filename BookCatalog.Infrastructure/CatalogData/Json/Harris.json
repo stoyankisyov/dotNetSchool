@@ -1,0 +1,33 @@
+{
+  "0761312714": {
+    "Id": "0761312714",
+    "Title": "100 days of school",
+    "Authors": [
+      {
+        "FirstName": "Harris",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Trudy",
+        "LastName": "",
+        "BirthDate": "1949-01-01"
+      },
+      {
+        "FirstName": "Johnson",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Beth",
+        "LastName": "Griffis",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "illustrator",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

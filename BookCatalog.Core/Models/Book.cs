@@ -6,7 +6,7 @@ namespace BookCatalog.Core.Models
     {
         private string _title;
 
-        public string Id { get; set; }  // -> Url for Ebook, first isbn from the list for PaperBook
+        public string Id { get; set; }  // Url for Ebook, first isbn from the list for PaperBook
         public HashSet<Author> Authors { get; }
         public string Title
         {

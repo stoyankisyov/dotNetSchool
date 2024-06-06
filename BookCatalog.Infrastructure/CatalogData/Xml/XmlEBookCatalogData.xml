@@ -1,0 +1,1919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Books>
+    <Book>
+      <Title>Heidi</Title>
+      <Authors>
+        <Author>
+          <FirstName>Spyri</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Johanna</FirstName>
+          <LastName />
+          <BirthDate>1827-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Velasquez</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Eric</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Harden</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Laurie</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>The turn of the screw, and Daisy Miller</Title>
+      <Authors>
+        <Author>
+          <FirstName>James</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Henry</FirstName>
+          <LastName />
+          <BirthDate>1843-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>James</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Henry</FirstName>
+          <LastName />
+          <BirthDate>1843-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Ivanhoe : a romance</Title>
+      <Authors>
+        <Author>
+          <FirstName>Scott</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Walter</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Sir</FirstName>
+          <LastName />
+          <BirthDate>1771-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Catch-22</Title>
+      <Authors>
+        <Author>
+          <FirstName>Heller</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Joseph</FirstName>
+          <LastName />
+          <BirthDate>1923-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Crictor</Title>
+      <Authors>
+        <Author>
+          <FirstName>Ungerer</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Tomi</FirstName>
+          <LastName />
+          <BirthDate>1931-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Charlie et la chocolaterie</Title>
+      <Authors>
+        <Author>
+          <FirstName>Dahl</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Roald</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>The Red Record: Tabulated Statistics and Alleged Causes of Lynching in the United States</Title>
+      <Authors>
+        <Author>
+          <FirstName>Wells-Barnett</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Ida</FirstName>
+          <LastName>B.</LastName>
+          <BirthDate>1862-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Heidi</Title>
+      <Authors>
+        <Author>
+          <FirstName>Spyri</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Johanna</FirstName>
+          <LastName />
+          <BirthDate>1827-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Smith</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Jessie</FirstName>
+          <LastName>Willcox</LastName>
+          <BirthDate>1863-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>ill</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>At this very moment</Title>
+      <Authors>
+        <Author>
+          <FirstName>Arnosky</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Jim</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Big plans</Title>
+      <Authors>
+        <Author>
+          <FirstName>Bob</FirstName>
+          <LastName>Shea</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Maud Martha</Title>
+      <Authors>
+        <Author>
+          <FirstName>Brooks</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Gwendolyn</FirstName>
+          <LastName />
+          <BirthDate>1917-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Our Nig; or, Sketches from the life of a free black in a two-story white house, North</Title>
+      <Authors>
+        <Author>
+          <FirstName>Wilson</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Harriet</FirstName>
+          <LastName>E.</LastName>
+          <BirthDate>1825-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Five plays</Title>
+      <Authors>
+        <Author>
+          <FirstName>Shakespeare</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>William</FirstName>
+          <LastName />
+          <BirthDate>1564-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Downer</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Alan</FirstName>
+          <LastName>Seymour</LastName>
+          <BirthDate>1912-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Bronzeville boys and girls</Title>
+      <Authors>
+        <Author>
+          <FirstName>Brooks</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Gwendolyn</FirstName>
+          <LastName />
+          <BirthDate>1917-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Little Stevie Wonder</Title>
+      <Authors>
+        <Author>
+          <FirstName>Quincy</FirstName>
+          <LastName>Troupe</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Scott's Ivanhoe</Title>
+      <Authors>
+        <Author>
+          <FirstName>Scott</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Walter</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Sir</FirstName>
+          <LastName />
+          <BirthDate>1771-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Tragedies II: Romeo and Juliet, Othello, King Lear. With biographical illus. and pictures of the setting of the plays</Title>
+      <Authors>
+        <Author>
+          <FirstName>Shakespeare</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>William</FirstName>
+          <LastName />
+          <BirthDate>1564-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Masefield</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>John</FirstName>
+          <LastName />
+          <BirthDate>1878-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>ed</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>And then there were none</Title>
+      <Authors>
+        <Author>
+          <FirstName>Christie</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Agatha</FirstName>
+          <LastName />
+          <BirthDate>1890-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Black and blue magic</Title>
+      <Authors>
+        <Author>
+          <FirstName>Snyder</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Zilpha</FirstName>
+          <LastName>Keatley</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Cool Daddy Rat</Title>
+      <Authors>
+        <Author>
+          <FirstName>Kristyn</FirstName>
+          <LastName>Crow</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Three tragedies: Julius Caesar, Hamlet, Macbeth</Title>
+      <Authors>
+        <Author>
+          <FirstName>Shakespeare</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>William</FirstName>
+          <LastName />
+          <BirthDate>1564-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Masefield</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>John</FirstName>
+          <LastName />
+          <BirthDate>1878-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>ed</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Around one cactus : owls, bats, and leaping rats</Title>
+      <Authors>
+        <Author>
+          <FirstName>Fredericks</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Anthony</FirstName>
+          <LastName>D</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Alice alone</Title>
+      <Authors>
+        <Author>
+          <FirstName>Isherwood</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Shirley</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Annie, Bea, and Chi Chi Dolores : a school day alphabet</Title>
+      <Authors>
+        <Author>
+          <FirstName>Maurer</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Donna</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Alexander, who's not (Do you hear me? I mean it!) going to move</Title>
+      <Authors>
+        <Author>
+          <FirstName>Viorst</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Judith</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Preiss-Glasser</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Robin</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>ill</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Gulliver's travels</Title>
+      <Authors>
+        <Author>
+          <FirstName>Swift</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Jonathan</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Ross</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>John</FirstName>
+          <LastName>F</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Hedda Gabler</Title>
+      <Authors>
+        <Author>
+          <FirstName>Ibsen</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Henrik</FirstName>
+          <LastName />
+          <BirthDate>1828-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Alice in Wonderland</Title>
+      <Authors>
+        <Author>
+          <FirstName>Carroll</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Lewis</FirstName>
+          <LastName />
+          <BirthDate>1832-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Acceleration</Title>
+      <Authors>
+        <Author>
+          <FirstName>McNamee</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Graham</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>John Steinbeck's The grapes of wrath</Title>
+      <Authors>
+        <Author>
+          <FirstName>Galati</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Frank</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Incidents in the life of a slave girl.</Title>
+      <Authors>
+        <Author>
+          <FirstName>Jacobs</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Harriet</FirstName>
+          <LastName>Ann)</LastName>
+          <BirthDate>1813-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Child</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Lydia</FirstName>
+          <LastName>Francis</LastName>
+          <BirthDate>1802-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Brent</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Linda</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Babe : the gallant pig</Title>
+      <Authors>
+        <Author>
+          <FirstName>King-Smith</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Dick</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Ender's game</Title>
+      <Authors>
+        <Author>
+          <FirstName>Card</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Orson</FirstName>
+          <LastName>Scott</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Henry and Beezus</Title>
+      <Authors>
+        <Author>
+          <FirstName>Cleary</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Beverly</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>The salt eaters</Title>
+      <Authors>
+        <Author>
+          <FirstName>Bambara</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Toni</FirstName>
+          <LastName>Cade</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Abel's island</Title>
+      <Authors>
+        <Author>
+          <FirstName>Steig</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>William</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>26 Fairmount Avenue</Title>
+      <Authors>
+        <Author>
+          <FirstName>Depaola</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Tomie</FirstName>
+          <LastName>Depaola)</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Among the hidden</Title>
+      <Authors>
+        <Author>
+          <FirstName>Haddix</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Margaret</FirstName>
+          <LastName>Peterson</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Angle of repose</Title>
+      <Authors>
+        <Author>
+          <FirstName>Peskin</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Nancy</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Anahita's woven riddle</Title>
+      <Authors>
+        <Author>
+          <FirstName>Sayres</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Meghan</FirstName>
+          <LastName>Nuttall</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Away to the goldfields!</Title>
+      <Authors>
+        <Author>
+          <FirstName>Pat</FirstName>
+          <LastName>Derby</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>King Henry IV, part I. Twelfth night. Tragedy of King Lear. The tempest</Title>
+      <Authors>
+        <Author>
+          <FirstName>Shakespeare</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>William</FirstName>
+          <LastName />
+          <BirthDate>1564-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Parrott</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Thomas</FirstName>
+          <LastName>Marc</LastName>
+          <BirthDate>1866-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>ed</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Telfer</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Robert</FirstName>
+          <LastName>Stockdale</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>ed</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Abe Lincoln remembers</Title>
+      <Authors>
+        <Author>
+          <FirstName>Turner</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Ann</FirstName>
+          <LastName>Warren</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>An abundance of Katherines</Title>
+      <Authors>
+        <Author>
+          <FirstName>Green</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>John</FirstName>
+          <LastName />
+          <BirthDate>1977-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>4 classic American novels</Title>
+      <Authors>
+        <Author>
+          <FirstName>Hawthorne</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Nathaniel</FirstName>
+          <LastName />
+          <BirthDate>1804-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Twain</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Mark</FirstName>
+          <LastName />
+          <BirthDate>1835-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Crane</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Stephen</FirstName>
+          <LastName />
+          <BirthDate>1871-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Melville</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Herman</FirstName>
+          <LastName />
+          <BirthDate>1819-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Birmingham, 1963</Title>
+      <Authors>
+        <Author>
+          <FirstName>Carole</FirstName>
+          <LastName>Weatherford</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Courage</Title>
+      <Authors>
+        <Author>
+          <FirstName>Bernard</FirstName>
+          <LastName>Waber</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Dear Mr. Henshaw</Title>
+      <Authors>
+        <Author>
+          <FirstName>Cleary</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Beverly</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Deception point</Title>
+      <Authors>
+        <Author>
+          <FirstName>Brown</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Dan</FirstName>
+          <LastName />
+          <BirthDate>1964-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Four short stories</Title>
+      <Authors>
+        <Author>
+          <FirstName>Melville</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Herman</FirstName>
+          <LastName />
+          <BirthDate>1819-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Ethan Frome with connections</Title>
+      <Authors>
+        <Author>
+          <FirstName>Edith</FirstName>
+          <LastName>Wharton</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>A my name is Alice</Title>
+      <Authors>
+        <Author>
+          <FirstName>Bayer</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Jane</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Katie's Sunday afternoon</Title>
+      <Authors>
+        <Author>
+          <FirstName>James</FirstName>
+          <LastName>Mayhew</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>As the roadrunner runs : a first book of maps</Title>
+      <Authors>
+        <Author>
+          <FirstName>Hartman</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Gail</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Acceptable risk</Title>
+      <Authors />
+    </Book>
+    <Book>
+      <Title>Anthills of the savannah</Title>
+      <Authors>
+        <Author>
+          <FirstName>Achebe</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Chinua</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Are you a snail?</Title>
+      <Authors>
+        <Author>
+          <FirstName>Allen</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Judy</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>The birthday swap</Title>
+      <Authors>
+        <Author>
+          <FirstName>Lopez</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Loretta</FirstName>
+          <LastName />
+          <BirthDate>1963-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Little women</Title>
+      <Authors>
+        <Author>
+          <FirstName>Escott</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>John</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Amazing grace</Title>
+      <Authors>
+        <Author>
+          <FirstName>Lindsey</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Hal</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>The autobiography of Mark Twain</Title>
+      <Authors>
+        <Author>
+          <FirstName>Twain</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Mark</FirstName>
+          <LastName />
+          <BirthDate>1835-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Jude the obscure</Title>
+      <Authors>
+        <Author>
+          <FirstName>Hardy</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Thomas</FirstName>
+          <LastName />
+          <BirthDate>1840-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>author</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>At Swim-Two-Birds</Title>
+      <Authors>
+        <Author>
+          <FirstName>O'Brien</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Flann</FirstName>
+          <LastName />
+          <BirthDate>1911-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Atticus of Rome</Title>
+      <Authors>
+        <Author>
+          <FirstName>Barry</FirstName>
+          <LastName>Denenberg</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Astrobiology</Title>
+      <Authors>
+        <Author>
+          <FirstName>Grady</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>M.</FirstName>
+          <LastName>M.)</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Brave new world : a novel</Title>
+      <Authors>
+        <Author>
+          <FirstName>Huxley</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Aldous</FirstName>
+          <LastName />
+          <BirthDate>1894-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Twelfth night. Hamlet</Title>
+      <Authors>
+        <Author>
+          <FirstName>Shakespeare</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>William</FirstName>
+          <LastName />
+          <BirthDate>1564-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Evans</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Bertrand</FirstName>
+          <LastName />
+          <BirthDate>1912-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>The call of the wild, The cruise of the Dazzler, and other stories of adventure, with the author's special report: Gold hunters of the North</Title>
+      <Authors>
+        <Author>
+          <FirstName>London</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Jack</FirstName>
+          <LastName />
+          <BirthDate>1876-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Shopping at the supermarket</Title>
+      <Authors>
+        <Author>
+          <FirstName>Depree</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Helen;Kreyl</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Joanne</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Quicksand</Title>
+      <Authors>
+        <Author>
+          <FirstName>Larsen</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Nella</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Roll of thunder, hear my cry</Title>
+      <Authors>
+        <Author>
+          <FirstName>Taylor</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Mildred</FirstName>
+          <LastName>D</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Crispin : the cross of lead</Title>
+      <Authors>
+        <Author>
+          <FirstName>Avi</FirstName>
+          <LastName />
+          <BirthDate>1937-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Adam Bede</Title>
+      <Authors>
+        <Author>
+          <FirstName>Eliot</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>George</FirstName>
+          <LastName />
+          <BirthDate>1819-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Alchemy</Title>
+      <Authors>
+        <Author>
+          <FirstName>Mahy</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Margaret</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Angus McBean</Title>
+      <Authors>
+        <Author>
+          <FirstName>McBean</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Angus</FirstName>
+          <LastName />
+          <BirthDate>1904-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Bone Wars</Title>
+      <Authors>
+        <Author>
+          <FirstName>Brett</FirstName>
+          <LastName>Davis</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>City Lullaby</Title>
+      <Authors>
+        <Author>
+          <FirstName>Marilyn</FirstName>
+          <LastName>Singer</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Animal farm</Title>
+      <Authors>
+        <Author>
+          <FirstName>Waldron</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Carmel</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>author</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>The Grapes of wrath</Title>
+      <Authors>
+        <Author>
+          <FirstName>Steinbeck</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>John</FirstName>
+          <LastName />
+          <BirthDate>1902-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Heidi, child of the mountains : adapted and abridged from the famous story</Title>
+      <Authors>
+        <Author>
+          <FirstName>Spyri</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Johanna</FirstName>
+          <LastName />
+          <BirthDate>1827-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Lerch</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Steffie</FirstName>
+          <LastName>E.</LastName>
+          <BirthDate>1908-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Crictor</Title>
+      <Authors>
+        <Author>
+          <FirstName>Ungerer</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Tomi</FirstName>
+          <LastName />
+          <BirthDate>1931-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Jazzy Miz Mozetta</Title>
+      <Authors>
+        <Author>
+          <FirstName>Roberts</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Brenda</FirstName>
+          <LastName>C</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Morrison</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Frank</FirstName>
+          <LastName />
+          <BirthDate>1971-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Forward the foundation</Title>
+      <Authors>
+        <Author>
+          <FirstName>Asimov</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Isaac</FirstName>
+          <LastName />
+          <BirthDate>1920-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Madame Bovary</Title>
+      <Authors>
+        <Author>
+          <FirstName>Flaubert</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Gustave</FirstName>
+          <LastName />
+          <BirthDate>1821-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Charles</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Joan</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Stahl</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Ben</FirstName>
+          <LastName />
+          <BirthDate>1910-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>ill</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Babushka's Doll</Title>
+      <Authors>
+        <Author>
+          <FirstName>Polacco</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Patricia</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>The London Shakespeare; a new annotated and critical edition of the complete works in six volumes</Title>
+      <Authors>
+        <Author>
+          <FirstName>Shakespeare</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>William</FirstName>
+          <LastName />
+          <BirthDate>1564-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Munro</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>John</FirstName>
+          <LastName>James</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>ed</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Bunny days</Title>
+      <Authors>
+        <Author>
+          <FirstName>Nyeu</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Tao</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Know what I saw?</Title>
+      <Authors>
+        <Author>
+          <FirstName>Fisher</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Aileen</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>DeSaix</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Deborah</FirstName>
+          <LastName>Durland</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>ill</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Common sense</Title>
+      <Authors>
+        <Author>
+          <FirstName>Paine</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Thomas</FirstName>
+          <LastName />
+          <BirthDate>1737-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Digital fortress</Title>
+      <Authors>
+        <Author>
+          <FirstName>Brown</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Dan</FirstName>
+          <LastName />
+          <BirthDate>1964-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Leaves of grass. Including a fac-simile autobiography, variorum readings of the poems, and a department of Gathered leaves</Title>
+      <Authors>
+        <Author>
+          <FirstName>Whitman</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Walt</FirstName>
+          <LastName />
+          <BirthDate>1819-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Great expectations</Title>
+      <Authors>
+        <Author>
+          <FirstName>Dickens</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Charles</FirstName>
+          <LastName />
+          <BirthDate>1812-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Fly free!</Title>
+      <Authors>
+        <Author>
+          <FirstName>Roseanne</FirstName>
+          <LastName>Thong</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Heidi adapted from the original story</Title>
+      <Authors>
+        <Author>
+          <FirstName>Spyri</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Johanna</FirstName>
+          <LastName />
+          <BirthDate>1827-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Malvern</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Corinne</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Where we stand : class matters</Title>
+      <Authors>
+        <Author>
+          <FirstName>Hooks</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Bell</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Arsenic and old lace</Title>
+      <Authors>
+        <Author>
+          <FirstName>Kesselring</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Joseph</FirstName>
+          <LastName />
+          <BirthDate>1902-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Hedda Gabler : drama en cuatro actos</Title>
+      <Authors>
+        <Author>
+          <FirstName>Ibsen</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Henrik</FirstName>
+          <LastName />
+          <BirthDate>1828-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Costa</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Carles</FirstName>
+          <LastName />
+          <BirthDate>1879-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Jordà</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Josep</FirstName>
+          <LastName>Maria</LastName>
+          <BirthDate>1870-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Three Roman plays</Title>
+      <Authors>
+        <Author>
+          <FirstName>William</FirstName>
+          <LastName>Shakespeare</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Gus and Grandpa at basketball</Title>
+      <Authors>
+        <Author>
+          <FirstName>Mills</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Claudia</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Stock</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Catherine</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>ill</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Jubilee</Title>
+      <Authors>
+        <Author>
+          <FirstName>Walker</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Margaret</FirstName>
+          <LastName />
+          <BirthDate>1915-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>The new Jim Crow : mass incarceration in the age of colorblindness</Title>
+      <Authors>
+        <Author>
+          <FirstName>Alexander</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Michelle</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>And the band played on</Title>
+      <Authors>
+        <Author>
+          <FirstName>Ward</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Christopher</FirstName>
+          <LastName />
+          <BirthDate>1942-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Iola Leroy, or, Shadows uplifted</Title>
+      <Authors>
+        <Author>
+          <FirstName>Harper</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Frances</FirstName>
+          <LastName>Watkins</LastName>
+          <BirthDate>1825-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Leaves of grass</Title>
+      <Authors>
+        <Author>
+          <FirstName>Whitman</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Walt</FirstName>
+          <LastName />
+          <BirthDate>1819-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Animals on the trail with Lewis and Clark</Title>
+      <Authors>
+        <Author>
+          <FirstName>Patent</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Dorothy</FirstName>
+          <LastName>Hinshaw</LastName>
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Muñoz</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>William</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>ill</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>1-2-3 peas</Title>
+      <Authors>
+        <Author>
+          <FirstName>Baker</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Keith</FirstName>
+          <LastName />
+          <BirthDate>1953-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>13 words</Title>
+      <Authors>
+        <Author>
+          <FirstName>Snicket</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Lemony</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Selected poems</Title>
+      <Authors>
+        <Author>
+          <FirstName>Brooks</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Gwendolyn</FirstName>
+          <LastName />
+          <BirthDate>1917-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+    <Book>
+      <Title>Invisibility blues : from pop to theory</Title>
+      <Authors>
+        <Author>
+          <FirstName>Wallace</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+        <Author>
+          <FirstName>Michele</FirstName>
+          <LastName />
+          <BirthDate>0001-01-01</BirthDate>
+        </Author>
+      </Authors>
+    </Book>
+  </Books>
+</Catalog>

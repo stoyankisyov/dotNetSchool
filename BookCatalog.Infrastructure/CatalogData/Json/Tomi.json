@@ -1,0 +1,34 @@
+{
+  "crictor00unge": {
+    "Id": "crictor00unge",
+    "Title": "Crictor",
+    "Authors": [
+      {
+        "FirstName": "Ungerer",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Tomi",
+        "LastName": "",
+        "BirthDate": "1931-01-01"
+      }
+    ]
+  },
+  "crictorunge00unge": {
+    "Id": "crictorunge00unge",
+    "Title": "Crictor",
+    "Authors": [
+      {
+        "FirstName": "Ungerer",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Tomi",
+        "LastName": "",
+        "BirthDate": "1931-01-01"
+      }
+    ]
+  }
+}

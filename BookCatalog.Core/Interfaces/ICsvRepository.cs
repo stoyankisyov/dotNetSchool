@@ -6,6 +6,5 @@ namespace BookCatalog.Core.Interfaces
     {
         Task<Library<EBook>> LoadEBooks();
         Task<Library<PaperBook>> LoadPaperBooks();
-
     }
 }

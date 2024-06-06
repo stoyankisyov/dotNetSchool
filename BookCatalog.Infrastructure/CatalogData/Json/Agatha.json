@@ -1,0 +1,18 @@
+{
+  "andthentherewerechri00chri": {
+    "Id": "andthentherewerechri00chri",
+    "Title": "And then there were none",
+    "Authors": [
+      {
+        "FirstName": "Christie",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Agatha",
+        "LastName": "",
+        "BirthDate": "1890-01-01"
+      }
+    ]
+  }
+}

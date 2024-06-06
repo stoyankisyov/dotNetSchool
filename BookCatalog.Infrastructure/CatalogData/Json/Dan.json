@@ -1,0 +1,34 @@
+{
+  "deceptionpoint100brow": {
+    "Id": "deceptionpoint100brow",
+    "Title": "Deception point",
+    "Authors": [
+      {
+        "FirstName": "Brown",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Dan",
+        "LastName": "",
+        "BirthDate": "1964-01-01"
+      }
+    ]
+  },
+  "digitalfortress000brow": {
+    "Id": "digitalfortress000brow",
+    "Title": "Digital fortress",
+    "Authors": [
+      {
+        "FirstName": "Brown",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Dan",
+        "LastName": "",
+        "BirthDate": "1964-01-01"
+      }
+    ]
+  }
+}

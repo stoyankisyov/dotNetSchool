@@ -1,0 +1,18 @@
+{
+  "0688006140": {
+    "Id": "0688006140",
+    "Title": "1 hunter",
+    "Authors": [
+      {
+        "FirstName": "Hutchins",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Pat",
+        "LastName": "",
+        "BirthDate": "1942-01-01"
+      }
+    ]
+  }
+}

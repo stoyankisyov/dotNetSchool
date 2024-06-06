@@ -1,0 +1,18 @@
+{
+  "0808512676": {
+    "Id": "0808512676",
+    "Title": "Growing up",
+    "Authors": [
+      {
+        "FirstName": "Baker",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Russell",
+        "LastName": "",
+        "BirthDate": "1925-01-01"
+      }
+    ]
+  }
+}

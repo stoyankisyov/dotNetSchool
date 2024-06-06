@@ -1,0 +1,49 @@
+{
+  "080859060X": {
+    "Id": "080859060X",
+    "Title": "How my parents learned to eat",
+    "Authors": [
+      {
+        "FirstName": "Friedman",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Ina",
+        "LastName": "R",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Say",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Allen",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0590488643": {
+    "Id": "0590488643",
+    "Title": "Grandfather\u0027s journey",
+    "Authors": [
+      {
+        "FirstName": "Say",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Allen",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Juvenile",
+        "LastName": "Congress)",
+        "BirthDate": null
+      }
+    ]
+  }
+}

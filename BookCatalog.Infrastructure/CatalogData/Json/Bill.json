@@ -1,0 +1,34 @@
+{
+  "038540817X": {
+    "Id": "038540817X",
+    "Title": "In a sunburned country",
+    "Authors": [
+      {
+        "FirstName": "Bryson",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Bill",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0233971181": {
+    "Id": "0233971181",
+    "Title": "Big bad Bruce",
+    "Authors": [
+      {
+        "FirstName": "Peet",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Bill",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

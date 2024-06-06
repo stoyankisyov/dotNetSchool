@@ -1,0 +1,49 @@
+{
+  "006228570X": {
+    "Id": "006228570X",
+    "Title": "Arthur, for the very first time",
+    "Authors": [
+      {
+        "FirstName": "MacLachlan",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Patricia",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Bloom",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Lloyd",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "ill",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0791071138": {
+    "Id": "0791071138",
+    "Title": "Toni Morrison",
+    "Authors": [
+      {
+        "FirstName": "Bloom",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Harold",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

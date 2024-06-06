@@ -1,0 +1,34 @@
+{
+  "0823417077": {
+    "Id": "0823417077",
+    "Title": "Bug safari",
+    "Authors": [
+      {
+        "FirstName": "Barner",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Bob",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "1442059443": {
+    "Id": "1442059443",
+    "Title": "Jethro Byrd, fairy child",
+    "Authors": [
+      {
+        "FirstName": "Graham",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Bob",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

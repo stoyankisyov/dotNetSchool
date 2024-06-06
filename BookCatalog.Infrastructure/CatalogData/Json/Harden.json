@@ -1,0 +1,38 @@
+{
+  "heidispryi00spyr": {
+    "Id": "heidispryi00spyr",
+    "Title": "Heidi",
+    "Authors": [
+      {
+        "FirstName": "Spyri",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Johanna",
+        "LastName": "",
+        "BirthDate": "1827-01-01"
+      },
+      {
+        "FirstName": "Velasquez",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Eric",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Harden",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Laurie",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

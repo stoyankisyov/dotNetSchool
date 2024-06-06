@@ -1,0 +1,18 @@
+{
+  "commonsense50pain": {
+    "Id": "commonsense50pain",
+    "Title": "Common sense",
+    "Authors": [
+      {
+        "FirstName": "Paine",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Thomas",
+        "LastName": "",
+        "BirthDate": "1737-01-01"
+      }
+    ]
+  }
+}

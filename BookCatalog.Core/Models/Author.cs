@@ -8,7 +8,7 @@ namespace BookCatalog.Core.Models
         private string _firstName;
         private string _lastName;
 
-        public DateOnly? BirthDate { get; set; }
+        public DateOnly? BirthDate { get; }
         public string FirstName
         {
             get => _firstName;
@@ -42,14 +42,6 @@ namespace BookCatalog.Core.Models
             FirstName = firstName;
             LastName = lastName;
             BirthDate = birthDate;
-        }
-
-        public override bool Equals(object obj)     
-            => obj is Author other ? FirstName == other.FirstName && LastName == other.LastName && BirthDate == other.BirthDate : false;
-
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(FirstName, LastName, BirthDate);
         }
     }
 }

@@ -1,0 +1,43 @@
+{
+  "8431625805": {
+    "Id": "8431625805",
+    "Title": "The works of William Shakespeare [microform]",
+    "Authors": [
+      {
+        "FirstName": "Shakespeare",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "William",
+        "LastName": "",
+        "BirthDate": "1564-01-01"
+      },
+      {
+        "FirstName": "Irving",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Henry",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Sir",
+        "LastName": "",
+        "BirthDate": "1838-01-01"
+      },
+      {
+        "FirstName": "Marshall",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Francis",
+        "LastName": "Albert",
+        "BirthDate": "1840-01-01"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "0786274204": {
+    "Id": "0786274204",
+    "Title": "Breath",
+    "Authors": [
+      {
+        "FirstName": "Napoli",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Donna",
+        "LastName": "Jo",
+        "BirthDate": "1948-01-01"
+      },
+      {
+        "FirstName": "Copyright",
+        "LastName": "DLC",
+        "BirthDate": null
+      }
+    ]
+  }
+}

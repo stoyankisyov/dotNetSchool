@@ -1,0 +1,28 @@
+{
+  "heidiadaptedfrom00spyr": {
+    "Id": "heidiadaptedfrom00spyr",
+    "Title": "Heidi adapted from the original story",
+    "Authors": [
+      {
+        "FirstName": "Spyri",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Johanna",
+        "LastName": "",
+        "BirthDate": "1827-01-01"
+      },
+      {
+        "FirstName": "Malvern",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Corinne",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

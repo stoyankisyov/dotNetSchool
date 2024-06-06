@@ -1,0 +1,34 @@
+{
+  "henrybeezus00clea_0": {
+    "Id": "henrybeezus00clea_0",
+    "Title": "Henry and Beezus",
+    "Authors": [
+      {
+        "FirstName": "Cleary",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Beverly",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "dearmrhenshaw00clea_0": {
+    "Id": "dearmrhenshaw00clea_0",
+    "Title": "Dear Mr. Henshaw",
+    "Authors": [
+      {
+        "FirstName": "Cleary",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Beverly",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

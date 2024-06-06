@@ -1,0 +1,18 @@
+{
+  "032925068X": {
+    "Id": "032925068X",
+    "Title": "Bad",
+    "Authors": [
+      {
+        "FirstName": "Ferris",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Jean",
+        "LastName": "",
+        "BirthDate": "1939-01-01"
+      }
+    ]
+  }
+}
