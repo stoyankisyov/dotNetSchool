@@ -1,6 +1,5 @@
-﻿using BookCatalog.Core.AbstractFactory;
-using BookCatalog.Core.AbstractFactory.LibrariesFactory;
-using BookCatalog.Core.AbstractFactory.RepositoriesFactory;
+﻿using BookCatalog.Core.AbstractFactory.LibrariesFactory;
+using BookCatalog.Core.Models;
 using BookCatalog.Infrastructure.Repositories;
 
 namespace BookCatalog
@@ -9,18 +8,29 @@ namespace BookCatalog
     {
         public static async Task Main(string[] args)
         {
-            LibraryAbstractFactory factory = new LibraryFactory(new CsvRepository());
-            var eBookLibrary = await factory.LoadEBookLibrary();
-            var paperBookLibrary = await factory.LoadPaperBookLibrary();
+            var csvRepository = new CsvRepository();
 
-            RepositoryAbstractFactory jsonRepositoryFactory = new JsonRepositoryFactory(new JsonEBookCatalogRepository(), new JsonPaperBookCatalogRepository());
-            RepositoryAbstractFactory xmlRepositoryFactory = new XmlRepositoryFactory(new XmlEBookCatalogRepository(), new XmlPaperBookCatalogRepository());
+            BookFactory eBookFactory = new EBookFactory(csvRepository);
+            var eBookLibrary = await Library.CreateAsync(eBookFactory);
 
-            await jsonRepositoryFactory.SaveEBooks(eBookLibrary);
-            await jsonRepositoryFactory.SavePaperBooks(paperBookLibrary);
+            BookFactory paperBookFactory = new PaperBookFactory(csvRepository);
+            var paperBookLibrary = await Library.CreateAsync(paperBookFactory);
 
-            await xmlRepositoryFactory.SaveEBooks(eBookLibrary);
-            await xmlRepositoryFactory.SavePaperBooks(paperBookLibrary);
+            // Converts from ICatalog to typed catalog
+            var paperBookcatalog = paperBookLibrary.Catalog.ToTypedCatalog<PaperBook>();
+            var eBookCatalog = eBookLibrary.Catalog.ToTypedCatalog<EBook>();
+
+            var xmlEBookRepository = new XmlEBookCatalogRepository();
+            await xmlEBookRepository.SaveAsync(eBookCatalog);
+
+            var xmlPaperBookRepository = new XmlPaperBookCatalogRepository();
+            await xmlPaperBookRepository.SaveAsync(paperBookcatalog);
+
+            var jsonEBookRepository = new JsonEBookCatalogRepository();
+            await jsonEBookRepository.SaveAsync(eBookCatalog);
+
+            var jsonPaperBookRepository = new JsonPaperBookCatalogRepository();
+            await jsonPaperBookRepository.SaveAsync(paperBookcatalog);
         }
     }
 }

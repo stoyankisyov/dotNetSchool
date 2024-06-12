@@ -1,26 +1,36 @@
 ﻿using System.Collections;
 using BookCatalog.Core.Helpers;
+using BookCatalog.Core.Interfaces;
 
 namespace BookCatalog.Core.Models
 {
-    public class Catalog<T> : IEnumerable<T> where T : Book
+    public class Catalog<T> : IEnumerable<T>, ICatalog where T : Book
     {
-        public Dictionary<string, T> Books { get; private set; }
-        
-        public Catalog()
-        {
-            Books = [];
-        }
+        private Dictionary<string, T> _books;
 
-        public void Add(T book)
+        public Dictionary<string, Book> Books 
         {
-            if (!Books.ContainsKey(book.Id))
+            get => _books.ToDictionary(kvp => kvp.Key, kvp => (Book)kvp.Value);
+            set
             {
-                Books.Add(book.Id, book);
+                _books = value.ToDictionary(kvp => kvp.Key, kvp => (T)kvp.Value);
             }
         }
 
-        public void AddRange(IEnumerable<T> books)
+        public Catalog()
+        {
+            _books = [];
+        }
+
+        public void Add(Book book)
+        {
+            if (!_books.ContainsKey(book.Id) && book is T suitableBook)
+            {
+                _books.Add(book.Id, suitableBook);
+            }
+        }
+
+        public void AddRange(IEnumerable<Book> books)
         {
             foreach (var book in books)
             {
@@ -33,8 +43,7 @@ namespace BookCatalog.Core.Models
             get => !BookHelper.IsIsbnInCorrectFormat(isbn) ? throw new ArgumentException("Invalid ISBN format.") : Books[BookHelper.UnifyIsbn(isbn)];
         }
 
-        public IEnumerator<T> GetEnumerator()
-            => Books.Values.GetEnumerator();
+        public IEnumerator<T> GetEnumerator() => _books.Values.GetEnumerator();
 
         IEnumerator IEnumerable.GetEnumerator()
             => GetEnumerator();

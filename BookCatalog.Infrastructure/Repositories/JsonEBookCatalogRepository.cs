@@ -30,23 +30,21 @@ namespace BookCatalog.Infrastructure.Repositories
             {
                 var authorCatalog = new Models.Entities.Catalog<Models.Entities.Book>();
                 authorCatalog.Books = entity.Books.Where(kvp => kvp.Value.Authors.Any(x => x.FirstName == author.FirstName && x.LastName == author.LastName && x.BirthDate == author.BirthDate))
-                                                 .ToDictionary(kvp => kvp.Key, kvp => new Models.Entities.Book()
-                                                 {
-                                                     Id = kvp.Value.Id,
-                                                     Title = kvp.Value.Title,
-                                                     Authors = kvp.Value.Authors
-                                                 });
+                                                  .ToDictionary(kvp => kvp.Key, kvp => new Models.Entities.Book()
+                                                  {
+                                                      Id = kvp.Value.Id,
+                                                      Title = kvp.Value.Title,
+                                                      Authors = new HashSet<Models.Entities.Author>(kvp.Value.Authors.Select(a => new Models.Entities.Author
+                                                      {
+                                                          FirstName = a.FirstName,
+                                                          LastName = a.LastName,
+                                                          BirthDate = a.BirthDate
+                                                      }))
+                                                  });
 
-                var authorJsonPath = "";
-                if (string.IsNullOrEmpty(author.LastName))
-                {
-                    authorJsonPath = Path.Combine(_filesPath, $"{author.FirstName}.json");
-                }
-                else
-                {
-
-                    authorJsonPath = Path.Combine(_filesPath, $"{author.FirstName}_{author.LastName}.json");
-                }
+                var authorJsonPath = string.IsNullOrEmpty(author.LastName)
+                    ? Path.Combine(_filesPath, $"{author.FirstName}.json")
+                    : Path.Combine(_filesPath, $"{author.FirstName}_{author.LastName}.json");
 
                 var serializedAuthorCatalog = JsonSerializer.Serialize(authorCatalog.Books, options);
 

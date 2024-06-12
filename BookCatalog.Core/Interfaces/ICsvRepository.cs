@@ -4,7 +4,7 @@ namespace BookCatalog.Core.Interfaces
 {
     public interface ICsvRepository
     {
-        Task<Library<EBook>> LoadEBooks();
-        Task<Library<PaperBook>> LoadPaperBooks();
+        Task<Catalog<EBook>> LoadEBooks();
+        Task<Catalog<PaperBook>> LoadPaperBooks();
     }
 }

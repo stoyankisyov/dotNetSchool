@@ -1,4 +1,6 @@
-﻿namespace BookCatalog.Infrastructure.Mappers
+﻿using BookCatalog.Core.Models;
+
+namespace BookCatalog.Infrastructure.Mappers
 {
     public static class CatalogMapper
     {
@@ -53,10 +55,10 @@
 
             foreach (var book in domainModel.Books)
             {
-                var coreEbook = book.Value;
+                var coreEbook = book.Value as Core.Models.EBook;
                 var entityEBook = new Models.Entities.EBook()
                 {
-                    Id = coreEbook.Id,
+                    Id = coreEbook!.Id,
                     Title = coreEbook.Title,
                     AvailableFormats = coreEbook.AvailableFormats,
                     Authors = coreEbook.Authors.ToEntity()
@@ -72,50 +74,57 @@
         /// Converts Core.Models.Catalog<Core.Models.PaperBook> /Domain Model/ to Models.Entities.Catalog<Models.Entities.PaperBook> /Entity/
         /// </summary>
         /// <param name="domainModel"></param>
-        /// <returns> Models.Entities.Catalog<Models.Entities.PaperBook> </returns>
+        /// <returns></returns>
         public static Models.Entities.Catalog<Models.Entities.PaperBook> ToEntity(this Core.Models.Catalog<Core.Models.PaperBook> domainModel)
         {
             var entityCatalog = new Models.Entities.Catalog<Models.Entities.PaperBook>();
 
             foreach (var book in domainModel.Books)
             {
-                var coreEbook = book.Value;
-                var entityEBook = new Models.Entities.PaperBook()
+                var corePaperBook = book.Value as Core.Models.PaperBook;
+                var entityPaperBook = new Models.Entities.PaperBook()
                 {
-                    Id = coreEbook.Id,
-                    Title = coreEbook.Title,
-                    Authors = coreEbook.Authors.ToEntity(),
-                    Isbns = coreEbook.Isbns.Select(x => x.Value).ToList(),
-                    PublicationDate = coreEbook.PublicationDate,
-                    Publisher = coreEbook.Publisher
+                    Id = corePaperBook!.Id,
+                    Title = corePaperBook.Title,
+                    Authors = corePaperBook.Authors.ToEntity(),
+                    Isbns = corePaperBook.Isbns.Select(x => x.Value).ToList(),
+                    PublicationDate = corePaperBook.PublicationDate,
+                    Publisher = corePaperBook.Publisher
                 };
 
-                entityCatalog.Books.Add(entityEBook.Id, entityEBook);
+                entityCatalog.Books.Add(entityPaperBook.Id, entityPaperBook);
             }
 
             return entityCatalog;
         }
 
         /// <summary>
-        /// Converts Core.Models.Catalog /Domain Model/ to Models.XmlEntities.Catalog /Xml Entity/
+        /// Converts Core.Models.Catalog<Core.Models.EBook> /Domain Model/ to Models.XmlEntities.Catalog<Models.XmlEntities.Book> /Xml Entity/
         /// </summary>
         /// <param name="domainModel"></param>
-        /// <returns> Models.XmlEntities.Catalog </returns>
+        /// <returns></returns>
         public static Models.XmlEntities.Catalog<Models.XmlEntities.Book> ToXmlEntity(this Core.Models.Catalog<Core.Models.EBook> domainModel)
-            => new Models.XmlEntities.Catalog<Models.XmlEntities.Book>()
-            {
-                Books = domainModel.Books.ToXmlEntity()
-            };
+        {
+            var xmlCatalog = new Models.XmlEntities.Catalog<Models.XmlEntities.Book>();
+
+            xmlCatalog.Books = domainModel.Books.Values.Select(book => (book as EBook)!.ToXmlEntity()).ToList();
+
+            return xmlCatalog;
+        }
 
         /// <summary>
         /// Converts Core.Models.Catalog<Core.Models.PaperBook> /Domain Model/ to Models.XmlEntities.Catalog<Models.XmlEntities.Book> /Xml Entity/
         /// </summary>
         /// <param name="domainModel"></param>
-        /// <returns> Models.XmlEntities.Catalog<Models.XmlEntities.Book> </returns>
+        /// <returns></returns>
         public static Models.XmlEntities.Catalog<Models.XmlEntities.Book> ToXmlEntity(this Core.Models.Catalog<Core.Models.PaperBook> domainModel)
-            => new Models.XmlEntities.Catalog<Models.XmlEntities.Book>()
-            {
-                Books = domainModel.Books.ToXmlEntity()
-            };
+        {
+            var xmlCatalog = new Models.XmlEntities.Catalog<Models.XmlEntities.Book>();
+
+            xmlCatalog.Books = domainModel.Books.Values.Select(book => (book as PaperBook)!.ToXmlEntity()).ToList();
+
+            return xmlCatalog;
+        }
     }
 }
+

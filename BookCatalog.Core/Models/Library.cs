@@ -1,32 +1,26 @@
-﻿namespace BookCatalog.Core.Models
-{
-    public class Library<T> where T : Book
-    {
-        public Catalog<T> Catalog { get; }
-        public List<string> PressReleaseItems { get; private set; }
+﻿using BookCatalog.Core.AbstractFactory.LibrariesFactory;
+using BookCatalog.Core.Interfaces;
 
-        public Library(Catalog<T> catalog)
+namespace BookCatalog.Core.Models
+{
+    public class Library
+    {
+        public ICatalog Catalog { get; set; }
+
+        public List<string> PressReleaseItems { get; set; }
+
+        private Library(ICatalog catalog, List<string> pressReleaseItems)
         {
             Catalog = catalog;
-            PressReleaseItems = new List<string>();
-            PopulatePressReleaseItems(catalog);
+            PressReleaseItems = pressReleaseItems;
         }
 
-        private void PopulatePressReleaseItems(Catalog<T> catalog)
+        public static async Task<Library> CreateAsync(BookFactory factory)
         {
-            if (typeof(T).Name.Equals(typeof(EBook).Name))
-            {
-                var eBooks = Catalog.Books.Select(x => x.Value as EBook).ToList();
+            var catalog = await factory.CreateCatalogAsync();
+            var pressReleaseItems = factory.CreatePressReleaseItems(catalog);
 
-                foreach (var book in eBooks)
-                {
-                    PressReleaseItems.AddRange(book!.AvailableFormats.Where(x => !PressReleaseItems.Contains(x)));
-                }
-            }
-            else if (typeof(T).Name.Equals(typeof(PaperBook).Name))
-            {
-                PressReleaseItems.AddRange(Catalog.Books.Select(x => x.Value as PaperBook).Where(x => !PressReleaseItems.Contains(x!.Publisher)).Select(book => book!.Publisher));
-            }
+            return new Library(catalog, pressReleaseItems);
         }
     }
 }

@@ -10,7 +10,7 @@ namespace BookCatalog.Infrastructure.Repositories
     {
         private const string _cvsFilePath = "../../../../BookCatalog.Infrastructure/CatalogData/books_info.csv";
 
-        public async Task<Core.Models.Library<Core.Models.EBook>> LoadEBooks()
+        public async Task<Core.Models.Catalog<Core.Models.EBook>> LoadEBooks()
         {
             var eBookCatalog = new Models.Entities.Catalog<Models.Entities.EBook>();
 
@@ -52,10 +52,10 @@ namespace BookCatalog.Infrastructure.Repositories
                 }
             }
 
-            return new Core.Models.Library<Core.Models.EBook>(eBookCatalog.ToDomainModel());
+            return eBookCatalog.ToDomainModel();
         }
 
-        public async Task<Core.Models.Library<Core.Models.PaperBook>> LoadPaperBooks()
+        public async Task<Core.Models.Catalog<Core.Models.PaperBook>> LoadPaperBooks()
         {
             var paperBookCatalog = new Models.Entities.Catalog<Models.Entities.PaperBook>();
 
@@ -113,7 +113,7 @@ namespace BookCatalog.Infrastructure.Repositories
                 }
             }
 
-            return new Core.Models.Library<Core.Models.PaperBook>(paperBookCatalog.ToDomainModel());
+            return paperBookCatalog.ToDomainModel();
         }
 
         private static List<Models.Entities.Author> GetAuthorsFromCsv(string authorsString)
