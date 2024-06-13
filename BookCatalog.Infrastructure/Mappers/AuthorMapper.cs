@@ -9,7 +9,7 @@ namespace BookCatalog.Infrastructure.Mappers
         /// </summary>
         /// <param name="entity"></param>
         /// <returns> Core.Models.Author </returns>
-        public static Core.Models.Author ToDomainModel (this Models.Entities.Author entity)
+        public static Core.Models.Author ToDomainModel(this Models.Entities.Author entity)
             => new Core.Models.Author(entity.FirstName, entity.LastName, entity.BirthDate);
 
         /// <summary>
