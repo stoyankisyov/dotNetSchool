@@ -1,0 +1,23 @@
+{
+  "0816774900": {
+    "Id": "0816774900",
+    "Title": "America the beautiful",
+    "Authors": [
+      {
+        "FirstName": "Bates",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Katharine",
+        "LastName": "Lee",
+        "BirthDate": "1859-01-01"
+      },
+      {
+        "FirstName": "Scholastic",
+        "LastName": "Inc",
+        "BirthDate": null
+      }
+    ]
+  }
+}

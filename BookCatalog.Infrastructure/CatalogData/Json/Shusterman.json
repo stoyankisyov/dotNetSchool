@@ -1,0 +1,34 @@
+{
+  "0689839693": {
+    "Id": "0689839693",
+    "Title": "Downsiders",
+    "Authors": [
+      {
+        "FirstName": "Shusterman",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Neal",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0062003097": {
+    "Id": "0062003097",
+    "Title": "Bruiser",
+    "Authors": [
+      {
+        "FirstName": "Shusterman",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Neal",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

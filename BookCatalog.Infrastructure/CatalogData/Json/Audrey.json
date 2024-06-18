@@ -1,0 +1,44 @@
+{
+  "0590035827": {
+    "Id": "0590035827",
+    "Title": "The Bunyans",
+    "Authors": [
+      {
+        "FirstName": "Wood",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Audrey",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Shannon",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "David",
+        "LastName": "",
+        "BirthDate": "1959-01-01"
+      }
+    ]
+  },
+  "1101076194": {
+    "Id": "1101076194",
+    "Title": "Getting near to baby",
+    "Authors": [
+      {
+        "FirstName": "Couloumbis",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Audrey",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

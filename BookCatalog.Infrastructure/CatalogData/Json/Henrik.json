@@ -1,0 +1,54 @@
+{
+  "heddagabler00ibse": {
+    "Id": "heddagabler00ibse",
+    "Title": "Hedda Gabler",
+    "Authors": [
+      {
+        "FirstName": "Ibsen",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Henrik",
+        "LastName": "",
+        "BirthDate": "1828-01-01"
+      }
+    ]
+  },
+  "heddagablerdrama1272ibse": {
+    "Id": "heddagablerdrama1272ibse",
+    "Title": "Hedda Gabler : drama en cuatro actos",
+    "Authors": [
+      {
+        "FirstName": "Ibsen",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Henrik",
+        "LastName": "",
+        "BirthDate": "1828-01-01"
+      },
+      {
+        "FirstName": "Costa",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Carles",
+        "LastName": "",
+        "BirthDate": "1879-01-01"
+      },
+      {
+        "FirstName": "Jord\u00E0",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Josep",
+        "LastName": "Maria",
+        "BirthDate": "1870-01-01"
+      }
+    ]
+  }
+}

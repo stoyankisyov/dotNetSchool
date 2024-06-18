@@ -1,0 +1,43 @@
+{
+  "madamebovary1949flau": {
+    "Id": "madamebovary1949flau",
+    "Title": "Madame Bovary",
+    "Authors": [
+      {
+        "FirstName": "Flaubert",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Gustave",
+        "LastName": "",
+        "BirthDate": "1821-01-01"
+      },
+      {
+        "FirstName": "Charles",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Joan",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Stahl",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Ben",
+        "LastName": "",
+        "BirthDate": "1910-01-01"
+      },
+      {
+        "FirstName": "ill",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

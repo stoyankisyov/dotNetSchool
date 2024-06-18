@@ -1,0 +1,18 @@
+{
+  "0688171990": {
+    "Id": "0688171990",
+    "Title": "Families",
+    "Authors": [
+      {
+        "FirstName": "Morris",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Ann",
+        "LastName": "",
+        "BirthDate": "1930-01-01"
+      }
+    ]
+  }
+}

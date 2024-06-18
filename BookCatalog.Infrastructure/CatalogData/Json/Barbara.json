@@ -1,0 +1,34 @@
+{
+  "1442063858": {
+    "Id": "1442063858",
+    "Title": "Animal dreams : a novel",
+    "Authors": [
+      {
+        "FirstName": "Kingsolver",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Barbara",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0813527538": {
+    "Id": "0813527538",
+    "Title": "Home girls : a Black feminist anthology",
+    "Authors": [
+      {
+        "FirstName": "Smith",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Barbara",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

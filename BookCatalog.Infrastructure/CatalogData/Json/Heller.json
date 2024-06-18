@@ -1,0 +1,34 @@
+{
+  "0804566518": {
+    "Id": "0804566518",
+    "Title": "Chickens aren\u0027t the only ones",
+    "Authors": [
+      {
+        "FirstName": "Heller",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Ruth",
+        "LastName": "",
+        "BirthDate": "1924-01-01"
+      }
+    ]
+  },
+  "0448018225": {
+    "Id": "0448018225",
+    "Title": "Animals born alive and well",
+    "Authors": [
+      {
+        "FirstName": "Heller",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Ruth",
+        "LastName": "",
+        "BirthDate": "1924-01-01"
+      }
+    ]
+  }
+}

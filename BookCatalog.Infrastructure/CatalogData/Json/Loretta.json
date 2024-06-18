@@ -1,0 +1,18 @@
+{
+  "birthdayswap0000lope": {
+    "Id": "birthdayswap0000lope",
+    "Title": "The birthday swap",
+    "Authors": [
+      {
+        "FirstName": "Lopez",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Loretta",
+        "LastName": "",
+        "BirthDate": "1963-01-01"
+      }
+    ]
+  }
+}

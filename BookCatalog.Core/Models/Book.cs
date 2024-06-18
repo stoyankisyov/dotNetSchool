@@ -1,19 +1,13 @@
 ﻿#nullable disable
 
-using System.Xml.Serialization;
-using BookCatalog.Core.Helpers;
-using BookCatalog.Core.Wrappers;
-
 namespace BookCatalog.Core.Models
 {
-    public class Book
+    public abstract class Book
     {
         private string _title;
 
-        [XmlElement("Isbn")]
-        public string Isbn { get; set; }
-
-        [XmlElement("Title")]
+        public string Id { get; set; }  // Url for Ebook, first isbn from the list for PaperBook
+        public HashSet<Author> Authors { get; }
         public string Title
         {
             get => _title;
@@ -28,32 +22,10 @@ namespace BookCatalog.Core.Models
             }
         }
 
-        [XmlIgnore]
-        public DateOnly? PublicationDate { get; set; }
-
-        [XmlElement("PublicationDate")]
-        public DateOnlyXmlWrapper PublicationDateXml
+        protected Book(string id, string title, HashSet<Author> authors)
         {
-            get => PublicationDate.HasValue ? new DateOnlyXmlWrapper(PublicationDate.Value) : null;
-            set => PublicationDate = value?.Date;
-        }
-
-        [XmlArray("Authors")]
-        [XmlArrayItem("Author")]
-        public HashSet<Author> Authors { get; set; }
-
-        public Book() { }
-
-        public Book(string isbn, string title, DateOnly? publicationDate, HashSet<Author> authors)
-        {
-            if (!BookHelper.IsIsbnInCorrectFormat(isbn))
-            {
-                throw new ArgumentException("Invalid ISBN format.");
-            }
-
-            Isbn = BookHelper.UnifyIsbn(isbn);
+            Id = id;
             Title = title;
-            PublicationDate = publicationDate;
             Authors = authors;
         }
     }

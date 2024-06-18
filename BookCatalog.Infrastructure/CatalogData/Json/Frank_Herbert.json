@@ -1,0 +1,24 @@
+{
+  "1429924918": {
+    "Id": "1429924918",
+    "Title": "The road to Dune",
+    "Authors": [
+      {
+        "FirstName": "Frank",
+        "LastName": "Herbert",
+        "BirthDate": null
+      }
+    ]
+  },
+  "5170071922": {
+    "Id": "5170071922",
+    "Title": "Chapterhouse, Dune",
+    "Authors": [
+      {
+        "FirstName": "Frank",
+        "LastName": "Herbert",
+        "BirthDate": null
+      }
+    ]
+  }
+}

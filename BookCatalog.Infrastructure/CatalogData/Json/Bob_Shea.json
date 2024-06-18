@@ -1,0 +1,13 @@
+{
+  "bigplans00shea": {
+    "Id": "bigplans00shea",
+    "Title": "Big plans",
+    "Authors": [
+      {
+        "FirstName": "Bob",
+        "LastName": "Shea",
+        "BirthDate": null
+      }
+    ]
+  }
+}

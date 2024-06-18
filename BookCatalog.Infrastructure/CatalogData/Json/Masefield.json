@@ -1,0 +1,64 @@
+{
+  "tragediesiiromeo00shak": {
+    "Id": "tragediesiiromeo00shak",
+    "Title": "Tragedies II: Romeo and Juliet, Othello, King Lear. With biographical illus. and pictures of the setting of the plays",
+    "Authors": [
+      {
+        "FirstName": "Shakespeare",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "William",
+        "LastName": "",
+        "BirthDate": "1564-01-01"
+      },
+      {
+        "FirstName": "Masefield",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "John",
+        "LastName": "",
+        "BirthDate": "1878-01-01"
+      },
+      {
+        "FirstName": "ed",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "threetragediesju00shak": {
+    "Id": "threetragediesju00shak",
+    "Title": "Three tragedies: Julius Caesar, Hamlet, Macbeth",
+    "Authors": [
+      {
+        "FirstName": "Shakespeare",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "William",
+        "LastName": "",
+        "BirthDate": "1564-01-01"
+      },
+      {
+        "FirstName": "Masefield",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "John",
+        "LastName": "",
+        "BirthDate": "1878-01-01"
+      },
+      {
+        "FirstName": "ed",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

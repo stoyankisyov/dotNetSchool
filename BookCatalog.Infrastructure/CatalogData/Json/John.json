@@ -1,0 +1,34 @@
+{
+  "0374706026": {
+    "Id": "0374706026",
+    "Title": "Assembling California",
+    "Authors": [
+      {
+        "FirstName": "McPhee",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "John",
+        "LastName": "",
+        "BirthDate": "1931-01-01"
+      }
+    ]
+  },
+  "0241100399": {
+    "Id": "0241100399",
+    "Title": "Coming into the country",
+    "Authors": [
+      {
+        "FirstName": "McPhee",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "John",
+        "LastName": "",
+        "BirthDate": "1931-01-01"
+      }
+    ]
+  }
+}

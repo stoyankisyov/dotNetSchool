@@ -1,0 +1,23 @@
+{
+  "judeobscure100hard": {
+    "Id": "judeobscure100hard",
+    "Title": "Jude the obscure",
+    "Authors": [
+      {
+        "FirstName": "Hardy",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Thomas",
+        "LastName": "",
+        "BirthDate": "1840-01-01"
+      },
+      {
+        "FirstName": "author",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

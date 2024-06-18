@@ -1,0 +1,34 @@
+{
+  "0590453572": {
+    "Id": "0590453572",
+    "Title": "Indian chiefs",
+    "Authors": [
+      {
+        "FirstName": "Freedman",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Russell",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0329602969": {
+    "Id": "0329602969",
+    "Title": "Children of the Wild West",
+    "Authors": [
+      {
+        "FirstName": "Friedman",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Russell",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

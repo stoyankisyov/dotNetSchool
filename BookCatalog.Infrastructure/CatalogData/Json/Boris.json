@@ -1,0 +1,28 @@
+{
+  "1101083840": {
+    "Id": "1101083840",
+    "Title": "Leonardo da Vinci",
+    "Authors": [
+      {
+        "FirstName": "Krull",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Kathleen",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Kulikov",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Boris",
+        "LastName": "",
+        "BirthDate": "1966-01-01"
+      }
+    ]
+  }
+}

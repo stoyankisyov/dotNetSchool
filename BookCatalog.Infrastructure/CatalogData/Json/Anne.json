@@ -1,0 +1,34 @@
+{
+  "0385491808": {
+    "Id": "0385491808",
+    "Title": "Crooked little heart",
+    "Authors": [
+      {
+        "FirstName": "Lamott",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Anne",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0552529737": {
+    "Id": "0552529737",
+    "Title": "Black horses for the king",
+    "Authors": [
+      {
+        "FirstName": "McCaffrey",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Anne",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "0606300082": {
+    "Id": "0606300082",
+    "Title": "The street",
+    "Authors": [
+      {
+        "FirstName": "Petry",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Ann",
+        "LastName": "",
+        "BirthDate": "1908-01-01"
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "0399133674": {
+    "Id": "0399133674",
+    "Title": "At risk",
+    "Authors": [
+      {
+        "FirstName": "Hoffman",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Alice",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "140520365X": {
+    "Id": "140520365X",
+    "Title": "Indigo",
+    "Authors": [
+      {
+        "FirstName": "Hoffman",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Alice",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

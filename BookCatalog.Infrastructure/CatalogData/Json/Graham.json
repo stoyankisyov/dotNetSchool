@@ -1,0 +1,34 @@
+{
+  "0439540771": {
+    "Id": "0439540771",
+    "Title": "Lord of the deep",
+    "Authors": [
+      {
+        "FirstName": "Salisbury",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Graham",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "1442059443": {
+    "Id": "1442059443",
+    "Title": "Jethro Byrd, fairy child",
+    "Authors": [
+      {
+        "FirstName": "Graham",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Bob",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

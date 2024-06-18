@@ -1,0 +1,44 @@
+{
+  "0316909769": {
+    "Id": "0316909769",
+    "Title": "The big bug book",
+    "Authors": [
+      {
+        "FirstName": "Facklam",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Margery",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Facklam",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Paul",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "032971614X": {
+    "Id": "032971614X",
+    "Title": "Hurricane song",
+    "Authors": [
+      {
+        "FirstName": "Volponi",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Paul",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "1442003898": {
+    "Id": "1442003898",
+    "Title": "Harold and the purple crayon",
+    "Authors": [
+      {
+        "FirstName": "Johnson",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Crockett",
+        "LastName": "",
+        "BirthDate": "1906-01-01"
+      }
+    ]
+  }
+}

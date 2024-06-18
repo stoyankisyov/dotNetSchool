@@ -1,0 +1,44 @@
+{
+  "0802788572": {
+    "Id": "0802788572",
+    "Title": "Arctic lights, arctic nights",
+    "Authors": [
+      {
+        "FirstName": "Miller",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Debbie",
+        "LastName": "S",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Van",
+        "LastName": "Zyle",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Jon",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0891907297": {
+    "Id": "0891907297",
+    "Title": "Death of a salesman : certain private conversations in two acts and a requiem",
+    "Authors": [
+      {
+        "FirstName": "Miller",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Arthur",
+        "LastName": "",
+        "BirthDate": "1915-01-01"
+      }
+    ]
+  }
+}

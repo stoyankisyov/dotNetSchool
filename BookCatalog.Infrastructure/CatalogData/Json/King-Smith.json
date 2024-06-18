@@ -1,0 +1,18 @@
+{
+  "isbn_9780375808210": {
+    "Id": "isbn_9780375808210",
+    "Title": "Babe : the gallant pig",
+    "Authors": [
+      {
+        "FirstName": "King-Smith",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Dick",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

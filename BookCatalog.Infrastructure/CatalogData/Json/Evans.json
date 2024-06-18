@@ -1,0 +1,28 @@
+{
+  "twelfthnighthaml00shak": {
+    "Id": "twelfthnighthaml00shak",
+    "Title": "Twelfth night. Hamlet",
+    "Authors": [
+      {
+        "FirstName": "Shakespeare",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "William",
+        "LastName": "",
+        "BirthDate": "1564-01-01"
+      },
+      {
+        "FirstName": "Evans",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Bertrand",
+        "LastName": "",
+        "BirthDate": "1912-01-01"
+      }
+    ]
+  }
+}

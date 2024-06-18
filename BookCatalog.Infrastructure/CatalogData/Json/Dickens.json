@@ -1,0 +1,18 @@
+{
+  "greatexpectation00dick_0": {
+    "Id": "greatexpectation00dick_0",
+    "Title": "Great expectations",
+    "Authors": [
+      {
+        "FirstName": "Dickens",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Charles",
+        "LastName": "",
+        "BirthDate": "1812-01-01"
+      }
+    ]
+  }
+}

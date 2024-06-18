@@ -1,0 +1,44 @@
+{
+  "ivanhoeromancescot": {
+    "Id": "ivanhoeromancescot",
+    "Title": "Ivanhoe : a romance",
+    "Authors": [
+      {
+        "FirstName": "Scott",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Walter",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Sir",
+        "LastName": "",
+        "BirthDate": "1771-01-01"
+      }
+    ]
+  },
+  "scottsivanhoe00scot": {
+    "Id": "scottsivanhoe00scot",
+    "Title": "Scott\u0027s Ivanhoe",
+    "Authors": [
+      {
+        "FirstName": "Scott",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Walter",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Sir",
+        "LastName": "",
+        "BirthDate": "1771-01-01"
+      }
+    ]
+  }
+}

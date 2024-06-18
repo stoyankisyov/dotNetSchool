@@ -1,0 +1,33 @@
+{
+  "0751372013": {
+    "Id": "0751372013",
+    "Title": "Book",
+    "Authors": [
+      {
+        "FirstName": "Lyon",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "George",
+        "LastName": "Ella",
+        "BirthDate": "1949-01-01"
+      },
+      {
+        "FirstName": "Catalanotto",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Peter",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "ill",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

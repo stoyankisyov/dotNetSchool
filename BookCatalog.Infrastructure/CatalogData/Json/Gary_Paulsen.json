@@ -1,0 +1,35 @@
+{
+  "0833564676": {
+    "Id": "0833564676",
+    "Title": "Canyons",
+    "Authors": [
+      {
+        "FirstName": "Gary",
+        "LastName": "Paulsen",
+        "BirthDate": null
+      }
+    ]
+  },
+  "075693110X": {
+    "Id": "075693110X",
+    "Title": "How Angel Peterson got his name",
+    "Authors": [
+      {
+        "FirstName": "Gary",
+        "LastName": "Paulsen",
+        "BirthDate": null
+      }
+    ]
+  },
+  "1416936475": {
+    "Id": "1416936475",
+    "Title": "Hatchet",
+    "Authors": [
+      {
+        "FirstName": "Gary",
+        "LastName": "Paulsen",
+        "BirthDate": null
+      }
+    ]
+  }
+}

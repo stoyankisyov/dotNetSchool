@@ -1,0 +1,28 @@
+{
+  "1101659629": {
+    "Id": "1101659629",
+    "Title": "Walt Whitman\u0027s leaves of grass",
+    "Authors": [
+      {
+        "FirstName": "Whitman",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Walt",
+        "LastName": "",
+        "BirthDate": "1819-01-01"
+      },
+      {
+        "FirstName": "Cowley",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Malcolm",
+        "LastName": "",
+        "BirthDate": "1898-01-01"
+      }
+    ]
+  }
+}

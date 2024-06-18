@@ -1,0 +1,33 @@
+{
+  "0833547518": {
+    "Id": "0833547518",
+    "Title": "Hey world, here I am!",
+    "Authors": [
+      {
+        "FirstName": "Little",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Jean",
+        "LastName": "",
+        "BirthDate": "1932-01-01"
+      },
+      {
+        "FirstName": "Truesdell",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Sue",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "ill",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

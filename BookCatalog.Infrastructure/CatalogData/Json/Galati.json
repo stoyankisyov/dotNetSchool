@@ -1,0 +1,18 @@
+{
+  "johnsteinbecksgr00gala": {
+    "Id": "johnsteinbecksgr00gala",
+    "Title": "John Steinbeck\u0027s The grapes of wrath",
+    "Authors": [
+      {
+        "FirstName": "Galati",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Frank",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "1299272584": {
+    "Id": "1299272584",
+    "Title": "Baby",
+    "Authors": [
+      {
+        "FirstName": "MacLachlan",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Patricia",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "006228570X": {
+    "Id": "006228570X",
+    "Title": "Arthur, for the very first time",
+    "Authors": [
+      {
+        "FirstName": "MacLachlan",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Patricia",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Bloom",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Lloyd",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "ill",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

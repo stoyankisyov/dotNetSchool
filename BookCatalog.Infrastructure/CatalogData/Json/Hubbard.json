@@ -1,0 +1,33 @@
+{
+  "0811814890": {
+    "Id": "0811814890",
+    "Title": "Hip Cat",
+    "Authors": [
+      {
+        "FirstName": "London",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Jonathan",
+        "LastName": "",
+        "BirthDate": "1947-01-01"
+      },
+      {
+        "FirstName": "Hubbard",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Woodleigh",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "ill",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

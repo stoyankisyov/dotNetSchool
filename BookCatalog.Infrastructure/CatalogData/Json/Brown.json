@@ -1,0 +1,49 @@
+{
+  "0547349041": {
+    "Id": "0547349041",
+    "Title": "Dolley Madison saves George Washington",
+    "Authors": [
+      {
+        "FirstName": "Brown",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Don",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0060262834": {
+    "Id": "0060262834",
+    "Title": "Another important book",
+    "Authors": [
+      {
+        "FirstName": "Brown",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Margaret",
+        "LastName": "Wise",
+        "BirthDate": "1910-01-01"
+      },
+      {
+        "FirstName": "Raschka",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Christopher",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "ill",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

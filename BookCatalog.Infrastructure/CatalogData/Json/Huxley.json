@@ -1,0 +1,18 @@
+{
+  "bravenewworld00huxl": {
+    "Id": "bravenewworld00huxl",
+    "Title": "Brave new world : a novel",
+    "Authors": [
+      {
+        "FirstName": "Huxley",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Aldous",
+        "LastName": "",
+        "BirthDate": "1894-01-01"
+      }
+    ]
+  }
+}

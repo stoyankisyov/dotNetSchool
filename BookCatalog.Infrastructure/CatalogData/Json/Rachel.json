@@ -1,0 +1,34 @@
+{
+  "0833550322": {
+    "Id": "0833550322",
+    "Title": "Ben\u0027s trumpet",
+    "Authors": [
+      {
+        "FirstName": "Isadora",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Rachel",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0747562024": {
+    "Id": "0747562024",
+    "Title": "Gingerbread",
+    "Authors": [
+      {
+        "FirstName": "Cohn",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Rachel",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

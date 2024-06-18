@@ -1,0 +1,33 @@
+{
+  "heidi100spyr": {
+    "Id": "heidi100spyr",
+    "Title": "Heidi",
+    "Authors": [
+      {
+        "FirstName": "Spyri",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Johanna",
+        "LastName": "",
+        "BirthDate": "1827-01-01"
+      },
+      {
+        "FirstName": "Smith",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Jessie",
+        "LastName": "Willcox",
+        "BirthDate": "1863-01-01"
+      },
+      {
+        "FirstName": "ill",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

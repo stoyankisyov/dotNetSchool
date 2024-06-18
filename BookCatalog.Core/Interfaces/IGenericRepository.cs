@@ -2,7 +2,6 @@
 {
     public interface IGenericRepository<T>
     {
-        Task AddAsync(T item);
-        Task<T> GetAsync();
+        Task SaveAsync(T item);
     }
 }

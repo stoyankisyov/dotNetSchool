@@ -1,0 +1,18 @@
+{
+  "grapesofwrath00stei_0": {
+    "Id": "grapesofwrath00stei_0",
+    "Title": "The Grapes of wrath",
+    "Authors": [
+      {
+        "FirstName": "Steinbeck",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "John",
+        "LastName": "",
+        "BirthDate": "1902-01-01"
+      }
+    ]
+  }
+}

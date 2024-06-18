@@ -1,0 +1,66 @@
+{
+  "0389316903": {
+    "Id": "0389316903",
+    "Title": "Downriver",
+    "Authors": [
+      {
+        "FirstName": "Hobbs",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Will",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "068987071X": {
+    "Id": "068987071X",
+    "Title": "Bearstone",
+    "Authors": [
+      {
+        "FirstName": "Hobbs",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Will",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0689870698": {
+    "Id": "0689870698",
+    "Title": "Changes in latitudes",
+    "Authors": [
+      {
+        "FirstName": "Hobbs",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Will",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "1439578265": {
+    "Id": "1439578265",
+    "Title": "Far North",
+    "Authors": [
+      {
+        "FirstName": "Hobbs",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Will",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

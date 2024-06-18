@@ -1,0 +1,28 @@
+{
+  "1299260756": {
+    "Id": "1299260756",
+    "Title": "Daisy Miller",
+    "Authors": [
+      {
+        "FirstName": "James",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Henry",
+        "LastName": "",
+        "BirthDate": "1843-01-01"
+      },
+      {
+        "FirstName": "Moore",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Geoffrey",
+        "LastName": "",
+        "BirthDate": "1920-01-01"
+      }
+    ]
+  }
+}

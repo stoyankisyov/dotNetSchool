@@ -1,0 +1,18 @@
+{
+  "mynameisalice0000baye": {
+    "Id": "mynameisalice0000baye",
+    "Title": "A my name is Alice",
+    "Authors": [
+      {
+        "FirstName": "Bayer",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Jane",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

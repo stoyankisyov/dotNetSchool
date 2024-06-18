@@ -1,0 +1,18 @@
+{
+  "9644310144": {
+    "Id": "9644310144",
+    "Title": "Abe Lincoln grows up",
+    "Authors": [
+      {
+        "FirstName": "Sandburg",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Carl",
+        "LastName": "",
+        "BirthDate": "1878-01-01"
+      }
+    ]
+  }
+}

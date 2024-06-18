@@ -1,0 +1,43 @@
+{
+  "1403710074": {
+    "Id": "1403710074",
+    "Title": "Adventures of Huckleberry Finn",
+    "Authors": [
+      {
+        "FirstName": "Stafford",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Clay",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Palmer",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Ruth",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "ill",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Twain",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Mark",
+        "LastName": "",
+        "BirthDate": "1835-01-01"
+      }
+    ]
+  }
+}

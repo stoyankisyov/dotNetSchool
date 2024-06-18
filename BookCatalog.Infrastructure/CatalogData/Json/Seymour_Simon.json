@@ -1,0 +1,24 @@
+{
+  "0439471370": {
+    "Id": "0439471370",
+    "Title": "Danger! earthquakes",
+    "Authors": [
+      {
+        "FirstName": "Seymour",
+        "LastName": "Simon",
+        "BirthDate": null
+      }
+    ]
+  },
+  "0688146384": {
+    "Id": "0688146384",
+    "Title": "Lightning",
+    "Authors": [
+      {
+        "FirstName": "Seymour",
+        "LastName": "Simon",
+        "BirthDate": null
+      }
+    ]
+  }
+}

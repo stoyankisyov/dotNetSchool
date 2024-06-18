@@ -1,0 +1,28 @@
+{
+  "fiveplays00shak": {
+    "Id": "fiveplays00shak",
+    "Title": "Five plays",
+    "Authors": [
+      {
+        "FirstName": "Shakespeare",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "William",
+        "LastName": "",
+        "BirthDate": "1564-01-01"
+      },
+      {
+        "FirstName": "Downer",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Alan",
+        "LastName": "Seymour",
+        "BirthDate": "1912-01-01"
+      }
+    ]
+  }
+}

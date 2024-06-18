@@ -1,0 +1,18 @@
+{
+  "angusmcbean0000mcbe": {
+    "Id": "angusmcbean0000mcbe",
+    "Title": "Angus McBean",
+    "Authors": [
+      {
+        "FirstName": "McBean",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Angus",
+        "LastName": "",
+        "BirthDate": "1904-01-01"
+      }
+    ]
+  }
+}

@@ -1,35 +1,32 @@
 ﻿using System.Collections;
-using System.Xml.Serialization;
 using BookCatalog.Core.Helpers;
+using BookCatalog.Core.Interfaces;
 
 namespace BookCatalog.Core.Models
 {
-    [XmlRoot("Catalog")]
-    public class Catalog : IEnumerable<Book>
+    public class Catalog<T> : IEnumerable<T>, ICatalog where T : Book
     {
-        [XmlIgnore]
-        public Dictionary<string, Book> Books { get; private set; }
+        private Dictionary<string, T> _books;
 
-        [XmlArray("Books")]
-        [XmlArrayItem("Book")]
-        public List<Book> BookList
+        public Dictionary<string, Book> Books 
         {
-            get => [.. Books.Values];
-            set => Books = value.ToDictionary(book => BookHelper.UnifyIsbn(book.Isbn));
+            get => _books.ToDictionary(kvp => kvp.Key, kvp => (Book)kvp.Value);
+            set
+            {
+                _books = value.ToDictionary(kvp => kvp.Key, kvp => (T)kvp.Value);
+            }
         }
 
         public Catalog()
         {
-            Books = [];
+            _books = [];
         }
 
         public void Add(Book book)
         {
-            var unifiedIsbn = BookHelper.UnifyIsbn(book.Isbn);
-
-            if (!Books.ContainsKey(unifiedIsbn))
+            if (!_books.ContainsKey(book.Id) && book is T suitableBook)
             {
-                Books.Add(unifiedIsbn, book);
+                _books.Add(book.Id, suitableBook);
             }
         }
 
@@ -46,8 +43,7 @@ namespace BookCatalog.Core.Models
             get => !BookHelper.IsIsbnInCorrectFormat(isbn) ? throw new ArgumentException("Invalid ISBN format.") : Books[BookHelper.UnifyIsbn(isbn)];
         }
 
-        public IEnumerator<Book> GetEnumerator()
-            => Books.Values.GetEnumerator();
+        public IEnumerator<T> GetEnumerator() => _books.Values.GetEnumerator();
 
         IEnumerator IEnumerable.GetEnumerator()
             => GetEnumerator();
@@ -56,8 +52,7 @@ namespace BookCatalog.Core.Models
             => [.. Books.Values.OrderBy(x => x.Title)];
 
         public List<Book> GetBooksByAuthor(Author author)
-            => [.. Books.Values.Where(x => x.Authors.Any(a => a.FirstName.Equals(author.FirstName) && a.LastName.Equals(author.LastName)))
-                               .OrderBy(x => x.PublicationDate)];
+            => [.. Books.Values.Where(x => x.Authors.Any(a => a.FirstName.Equals(author.FirstName) && a.LastName.Equals(author.LastName)))];
 
         public List<(string, int)> GetAllAuthorsBookCount()
             => [.. Books.Values.SelectMany(book => book.Authors)

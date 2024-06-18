@@ -1,0 +1,59 @@
+{
+  "0440414652": {
+    "Id": "0440414652",
+    "Title": "Bug Boy",
+    "Authors": [
+      {
+        "FirstName": "Sonenklar",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Carol",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Lewin",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Betsy",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "ill",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  },
+  "1565842960": {
+    "Id": "1565842960",
+    "Title": "Corruption",
+    "Authors": [
+      {
+        "FirstName": "Ben",
+        "LastName": "Jelloun",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Tahar",
+        "LastName": "",
+        "BirthDate": "1944-01-01"
+      },
+      {
+        "FirstName": "Volk",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Carol",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}

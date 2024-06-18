@@ -1,0 +1,33 @@
+{
+  "0758700563": {
+    "Id": "0758700563",
+    "Title": "Make way for ducklings",
+    "Authors": [
+      {
+        "FirstName": "McCloskey",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Robert",
+        "LastName": "",
+        "BirthDate": "1914-01-01"
+      },
+      {
+        "FirstName": "Galvin",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "John",
+        "LastName": "T.",
+        "BirthDate": "1919-01-01"
+      },
+      {
+        "FirstName": "former",
+        "LastName": "owner",
+        "BirthDate": null
+      }
+    ]
+  }
+}

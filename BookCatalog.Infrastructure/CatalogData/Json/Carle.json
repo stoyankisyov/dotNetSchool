@@ -1,0 +1,34 @@
+{
+  "0698116321": {
+    "Id": "0698116321",
+    "Title": "Draw me a star",
+    "Authors": [
+      {
+        "FirstName": "Carle",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Eric",
+        "LastName": "",
+        "BirthDate": "1929-01-01"
+      }
+    ]
+  },
+  "9577624146": {
+    "Id": "9577624146",
+    "Title": "10 little rubber ducks",
+    "Authors": [
+      {
+        "FirstName": "Carle",
+        "LastName": "",
+        "BirthDate": null
+      },
+      {
+        "FirstName": "Eric",
+        "LastName": "",
+        "BirthDate": null
+      }
+    ]
+  }
+}
