@@ -15,20 +15,7 @@ namespace BookCatalog.Core.AbstractFactory.LibrariesFactory
             return result;
         }
 
-        public override List<string> CreatePressReleaseItems(ICatalog catalog)
-        {
-            var pressReleaseItems = new List<string>();
-            var paperBooks = catalog.Books.Values.Cast<PaperBook>().ToList();
-
-            foreach (var book in paperBooks)
-            {
-                if (!pressReleaseItems.Contains(book.Publisher))
-                {
-                    pressReleaseItems.Add(book.Publisher);
-                }
-            }
-
-            return pressReleaseItems;
-        }
+        public override List<string> CreatePressReleaseItems(ICatalog catalog) 
+            => catalog.Books.Values.Cast<PaperBook>().Select(x => x.Publisher).Distinct().ToList();
     }
 }

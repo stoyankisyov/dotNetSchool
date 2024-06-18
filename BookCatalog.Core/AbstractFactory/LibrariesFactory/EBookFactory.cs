@@ -16,22 +16,6 @@ namespace BookCatalog.Core.AbstractFactory.LibrariesFactory
         }
 
         public override List<string> CreatePressReleaseItems(ICatalog catalog)
-        {
-            var pressReleaseItems = new List<string>();
-            var eBooks = catalog.Books.Values.Cast<EBook>().ToList();
-
-            foreach (var book in eBooks)
-            {
-                foreach (var format in book.AvailableFormats)
-                {
-                    if (!pressReleaseItems.Contains(format))
-                    {
-                        pressReleaseItems.Add(format);
-                    }
-                }
-            }
-
-            return pressReleaseItems;
-        }
+            => catalog.Books.Values.Cast<EBook>().SelectMany(x => x.AvailableFormats).Distinct().ToList();
     }
 }
