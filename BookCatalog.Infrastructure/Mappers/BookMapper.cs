@@ -19,7 +19,7 @@
         {
             var isbns = new List<Core.Models.Isbn>();
 
-            foreach(var isbn in entity.Isbns)
+            foreach (var isbn in entity.Isbns)
             {
                 isbns.Add(new Core.Models.Isbn(isbn));
             }

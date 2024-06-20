@@ -1,5 +1,4 @@
 ﻿using BookCatalog.Core.Interfaces;
-using BookCatalog.Core.Models;
 
 namespace BookCatalog.Core.AbstractFactory.LibrariesFactory
 {

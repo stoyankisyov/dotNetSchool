@@ -8,7 +8,7 @@ namespace BookCatalog.Core.Models
     {
         private Dictionary<string, T> _books;
 
-        public Dictionary<string, Book> Books 
+        public Dictionary<string, Book> Books
         {
             get => _books.ToDictionary(kvp => kvp.Key, kvp => (Book)kvp.Value);
             set
